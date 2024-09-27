@@ -2,6 +2,7 @@
     "aliments": [
         {
             "nom": "Attiéké-Poisson",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Attiéké (semoule de manioc)",
@@ -28,6 +29,7 @@
         },
         {
             "nom": "Foutou Banane",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Banane plantain",
@@ -46,6 +48,7 @@
         },
         {
             "nom": "Kedjenou de Poulet",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Poulet",
@@ -76,6 +79,7 @@
         },
         {
             "nom": "Alloco",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Banane plantain frite",
@@ -94,6 +98,7 @@
         },
         {
             "nom": "Garba",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Attiéké",
@@ -120,6 +125,7 @@
         },
         {
             "nom": "Riz Sauce Arachide",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Riz blanc",
@@ -150,6 +156,7 @@
         },
         {
             "nom": "Soupe de Poisson",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Poisson (capitaine)",
@@ -180,6 +187,7 @@
         },
         {
             "nom": "Placali Sauce Graine",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Placali (pâte de manioc)",
@@ -210,6 +218,7 @@
         },
         {
             "nom": "Tchep au Poulet",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Riz",
@@ -240,6 +249,7 @@
         },
         {
             "nom": "Poulet Braisé avec Attiéké",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Poulet braisé",
@@ -266,6 +276,7 @@
         },
         {
             "nom": "Riz Sauce Feuille (Sauce Tôh)",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Riz blanc",
@@ -296,6 +307,7 @@
         },
         {
             "nom": "Kokodé",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Igname",
@@ -322,6 +334,7 @@
         },
         {
             "nom": "N'voufou",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Banane plantain",
@@ -348,6 +361,7 @@
         },
         {
             "nom": "Sauce Djoumblé",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Viande de bœuf",
@@ -374,6 +388,7 @@
         },
         {
             "nom": "Kékérenou",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Igname",
@@ -400,6 +415,7 @@
         },
         {
             "nom": "Soupe Kabato",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Riz",
@@ -426,6 +442,7 @@
         },
         {
             "nom": "Akpessi",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Igname",
@@ -452,6 +469,7 @@
         },
         {
             "nom": "Djenkoumé",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Semoule de maïs",
@@ -478,6 +496,7 @@
         },
         {
             "nom": "Riz Cantonais",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Riz",
@@ -504,6 +523,7 @@
         },
         {
             "nom": "Gnammankoudji",
+            "image":"https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Aubergines",
