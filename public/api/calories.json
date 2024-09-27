@@ -1,0 +1,532 @@
+{
+    "aliments": [
+        {
+            "nom": "Attiéké-Poisson",
+            "ingredients": [
+                {
+                    "nom": "Attiéké (semoule de manioc)",
+                    "calories": 150
+                },
+                {
+                    "nom": "Poisson grillé",
+                    "calories": 200
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                },
+                {
+                    "nom": "Tomates",
+                    "calories": 25
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 400
+        },
+        {
+            "nom": "Foutou Banane",
+            "ingredients": [
+                {
+                    "nom": "Banane plantain",
+                    "calories": 200
+                },
+                {
+                    "nom": "Manioc",
+                    "calories": 150
+                },
+                {
+                    "nom": "Sauce graine (huile de palme)",
+                    "calories": 150
+                }
+            ],
+            "calories_totales": 500
+        },
+        {
+            "nom": "Kedjenou de Poulet",
+            "ingredients": [
+                {
+                    "nom": "Poulet",
+                    "calories": 250
+                },
+                {
+                    "nom": "Aubergines",
+                    "calories": 30
+                },
+                {
+                    "nom": "Tomates",
+                    "calories": 25
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                },
+                {
+                    "nom": "Gingembre",
+                    "calories": 10
+                }
+            ],
+            "calories_totales": 340
+        },
+        {
+            "nom": "Alloco",
+            "ingredients": [
+                {
+                    "nom": "Banane plantain frite",
+                    "calories": 300
+                },
+                {
+                    "nom": "Huile",
+                    "calories": 100
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                }
+            ],
+            "calories_totales": 420
+        },
+        {
+            "nom": "Garba",
+            "ingredients": [
+                {
+                    "nom": "Attiéké",
+                    "calories": 150
+                },
+                {
+                    "nom": "Thon frit",
+                    "calories": 180
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                },
+                {
+                    "nom": "Huile",
+                    "calories": 50
+                }
+            ],
+            "calories_totales": 405
+        },
+        {
+            "nom": "Riz Sauce Arachide",
+            "ingredients": [
+                {
+                    "nom": "Riz blanc",
+                    "calories": 200
+                },
+                {
+                    "nom": "Sauce arachide",
+                    "calories": 300
+                },
+                {
+                    "nom": "Viande de bœuf",
+                    "calories": 150
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                },
+                {
+                    "nom": "Tomates",
+                    "calories": 25
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 700
+        },
+        {
+            "nom": "Soupe de Poisson",
+            "ingredients": [
+                {
+                    "nom": "Poisson (capitaine)",
+                    "calories": 250
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                },
+                {
+                    "nom": "Tomates",
+                    "calories": 25
+                },
+                {
+                    "nom": "Aubergines",
+                    "calories": 30
+                },
+                {
+                    "nom": "Gombo",
+                    "calories": 15
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 345
+        },
+        {
+            "nom": "Placali Sauce Graine",
+            "ingredients": [
+                {
+                    "nom": "Placali (pâte de manioc)",
+                    "calories": 200
+                },
+                {
+                    "nom": "Sauce graine (huile de palme)",
+                    "calories": 300
+                },
+                {
+                    "nom": "Poisson fumé",
+                    "calories": 100
+                },
+                {
+                    "nom": "Aubergines",
+                    "calories": 30
+                },
+                {
+                    "nom": "Gombo",
+                    "calories": 15
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 650
+        },
+        {
+            "nom": "Tchep au Poulet",
+            "ingredients": [
+                {
+                    "nom": "Riz",
+                    "calories": 200
+                },
+                {
+                    "nom": "Poulet",
+                    "calories": 250
+                },
+                {
+                    "nom": "Carottes",
+                    "calories": 30
+                },
+                {
+                    "nom": "Tomates",
+                    "calories": 25
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 530
+        },
+        {
+            "nom": "Poulet Braisé avec Attiéké",
+            "ingredients": [
+                {
+                    "nom": "Poulet braisé",
+                    "calories": 250
+                },
+                {
+                    "nom": "Attiéké (semoule de manioc)",
+                    "calories": 150
+                },
+                {
+                    "nom": "Tomates",
+                    "calories": 25
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 450
+        },
+        {
+            "nom": "Riz Sauce Feuille (Sauce Tôh)",
+            "ingredients": [
+                {
+                    "nom": "Riz blanc",
+                    "calories": 200
+                },
+                {
+                    "nom": "Sauce feuille",
+                    "calories": 100
+                },
+                {
+                    "nom": "Viande de bœuf",
+                    "calories": 150
+                },
+                {
+                    "nom": "Aubergines",
+                    "calories": 30
+                },
+                {
+                    "nom": "Gombo",
+                    "calories": 15
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 500
+        },
+        {
+            "nom": "Kokodé",
+            "ingredients": [
+                {
+                    "nom": "Igname",
+                    "calories": 200
+                },
+                {
+                    "nom": "Sauce tomate",
+                    "calories": 50
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                },
+                {
+                    "nom": "Huile",
+                    "calories": 50
+                }
+            ],
+            "calories_totales": 325
+        },
+        {
+            "nom": "N'voufou",
+            "ingredients": [
+                {
+                    "nom": "Banane plantain",
+                    "calories": 200
+                },
+                {
+                    "nom": "Manioc",
+                    "calories": 150
+                },
+                {
+                    "nom": "Sauce arachide",
+                    "calories": 200
+                },
+                {
+                    "nom": "Tomates",
+                    "calories": 25
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                }
+            ],
+            "calories_totales": 595
+        },
+        {
+            "nom": "Sauce Djoumblé",
+            "ingredients": [
+                {
+                    "nom": "Viande de bœuf",
+                    "calories": 150
+                },
+                {
+                    "nom": "Graine de djoumblé",
+                    "calories": 300
+                },
+                {
+                    "nom": "Tomates",
+                    "calories": 25
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 500
+        },
+        {
+            "nom": "Kékérenou",
+            "ingredients": [
+                {
+                    "nom": "Igname",
+                    "calories": 200
+                },
+                {
+                    "nom": "Sauce arachide",
+                    "calories": 250
+                },
+                {
+                    "nom": "Poulet fumé",
+                    "calories": 150
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 625
+        },
+        {
+            "nom": "Soupe Kabato",
+            "ingredients": [
+                {
+                    "nom": "Riz",
+                    "calories": 200
+                },
+                {
+                    "nom": "Poisson fumé",
+                    "calories": 150
+                },
+                {
+                    "nom": "Gombo",
+                    "calories": 15
+                },
+                {
+                    "nom": "Aubergines",
+                    "calories": 30
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 400
+        },
+        {
+            "nom": "Akpessi",
+            "ingredients": [
+                {
+                    "nom": "Igname",
+                    "calories": 200
+                },
+                {
+                    "nom": "Sauce tomate",
+                    "calories": 50
+                },
+                {
+                    "nom": "Œuf dur",
+                    "calories": 70
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 345
+        },
+        {
+            "nom": "Djenkoumé",
+            "ingredients": [
+                {
+                    "nom": "Semoule de maïs",
+                    "calories": 200
+                },
+                {
+                    "nom": "Tomates",
+                    "calories": 25
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                },
+                {
+                    "nom": "Huile",
+                    "calories": 100
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 350
+        },
+        {
+            "nom": "Riz Cantonais",
+            "ingredients": [
+                {
+                    "nom": "Riz",
+                    "calories": 200
+                },
+                {
+                    "nom": "Poulet",
+                    "calories": 250
+                },
+                {
+                    "nom": "Carottes",
+                    "calories": 30
+                },
+                {
+                    "nom": "Œuf",
+                    "calories": 70
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20
+                }
+            ],
+            "calories_totales": 570
+        },
+        {
+            "nom": "Gnammankoudji",
+            "ingredients": [
+                {
+                    "nom": "Aubergines",
+                    "calories": 30
+                },
+                {
+                    "nom": "Gombo",
+                    "calories": 15
+                },
+                {
+                    "nom": "Poisson fumé",
+                    "calories": 150
+                },
+                {
+                    "nom": "Riz",
+                    "calories": 200
+                },
+                {
+                    "nom": "Piment",
+                    "calories": 5
+                }
+            ],
+            "calories_totales": 400
+        }
+    ]
+}
