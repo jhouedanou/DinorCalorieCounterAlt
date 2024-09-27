@@ -4,11 +4,7 @@
 
     <div class="field">
       <div class="control">
-        <input class="input" type="text" placeholder="Rechercher un aliment" v-model="searchTerm"
-          list="aliment-suggestions">
-        <datalist id="aliment-suggestions">
-          <option v-for="aliment in aliments" :key="aliment.nom" :value="aliment.nom"></option>
-        </datalist>
+        <input class="input" type="text" placeholder="Rechercher un aliment" v-model="searchTerm">
       </div>
     </div>
 
@@ -25,15 +21,29 @@
 </template>
 
 <script setup>
-import { ref, computed, watch } from 'vue'
+import { ref, watch, onMounted } from 'vue'
 import { useCalories } from '@/composables/useCalories'
+import Fuse from 'fuse.js'
 
 const { aliments, isLoading, error } = useCalories()
 const searchTerm = ref('')
 const selectedAliment = ref(null)
+let fuse
+
+onMounted(() => {
+  fuse = new Fuse(aliments.value, {
+    keys: ['nom'],
+    threshold: 0.3
+  })
+})
 
 watch(searchTerm, (newValue) => {
-  selectedAliment.value = aliments.value.find(aliment => aliment.nom.toLowerCase() === newValue.toLowerCase())
+  if (newValue) {
+    const results = fuse.search(newValue)
+    selectedAliment.value = results.length > 0 ? results[0].item : null
+  } else {
+    selectedAliment.value = null
+  }
 })
 
 const getEmoji = (nom) => {
