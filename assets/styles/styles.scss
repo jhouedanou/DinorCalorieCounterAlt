@@ -3,7 +3,11 @@ $secondary:#f3b702;
 body {
 
     font-family: 'Poppins', sans-serif;
-    background:$primary !important ;
+  background-image:url('images/image_fx_.jpg');
+  background-color: $primary !important;
+  background-repeat: no-repeat !important;
+  background-position:center center!important ;  background-size: cover !important;
+
 
     .yeleen{
       max-width: 80vw;
