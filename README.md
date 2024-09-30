@@ -1,75 +1,41 @@
-# Nuxt 3 Minimal Starter
+# DinorCalorieCounter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+DinorCalorieCounter est une application web progressive (PWA) conçue pour aider les utilisateurs à suivre leur consommation de calories en se concentrant sur les plats traditionnels ivoiriens.
 
-## Setup
+## Fonctionnalités
 
-Make sure to install the dependencies:
+- Calcul des calories pour les plats populaires ivoiriens
+- Interface utilisateur intuitive avec des onglets pour les aliments et les restaurants
+- Recherche et filtrage des plats et restaurants
+- Sélection des ingrédients pour un calcul précis des calories
+- Mode hors ligne grâce à la technologie PWA
 
-```bash
-# npm
-npm install
+## Technologies utilisées
 
-# pnpm
-pnpm install
+- Vue.js 3
+- Nuxt.js 3
+- Bulma CSS
+- @nuxt/image pour l'optimisation des images
+- @nuxtjs/pwa pour les fonctionnalités PWA
 
-# yarn
-yarn install
+## Installation
 
-# bun
-bun install
-```
+1. Clonez le dépôt
+2. Installez les dépendances avec `yarn install`
+3. Lancez le serveur de développement avec `yarn dev`
 
-## Development Server
+## Déploiement
 
-Start the development server on `http://localhost:3000`:
+Pour déployer l'application :
 
-```bash
-# npm
-npm run dev
+1. Construisez l'application avec `yarn build`
+2. Générez une version statique avec `yarn generate`
+3. Déployez le contenu du dossier `dist` sur votre serveur web
 
-# pnpm
-pnpm run dev
+## Contribution
 
-# yarn
-yarn dev
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
 
-# bun
-bun run dev
-```
+## Licence
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+[MIT License](LICENSE)
