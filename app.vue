@@ -1,52 +1,16 @@
 <template>
   <div class="yeleen container">
-
-    <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="/">
-            <strong>DinorCalorieCounter</strong>
-          </a>
-        </div>
-
-        <div class="navbar-menu">
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="field" v-if="activeTab === 'aliments'">
-                <p class="control has-icons-left">
-                  <input class="input" type="text" placeholder="Rechercher une recette" v-model="searchTermRecettes">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-search"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="field" v-else>
-                <p class="control has-icons-left">
-                  <input class="input" type="text" placeholder="Rechercher un restaurant"
-                    v-model="searchTermRestaurants">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-search"></i>
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="container mt-0 pt-6">
+      <div class="carz is-flex is-justify-content-space-between is-align-items-center">
+        <img src="/images/logo.png" class="same" alt="">
+        <p>Calculateur de calories</p>
       </div>
-    </nav>
-    <div class="container mt-6 pt-5">
-      <h1 class="title is-1 has-text-centered my-6">DInor APP</h1>
-      <h2 class="subtitle is-3 has-text-centered mb-6">Calculateur Alimentaire</h2>
-      <p class="has-text-centered mb-6">
-        Obtenez les calories, graisses, glucides, protéines et bien plus pour vos aliments et boissons.
-      </p>
-
       <div class="tabs is-centered is-boxed is-toggle">
-        <ul>
-          <li :class="{ 'is-active': activeTab === 'aliments' }">
+        <ul class="tabs-list">
+          <li :class="{ 'is-active': activeTab === 'aliments' }" class="tab-item">
             <a @click="activeTab = 'aliments'">Aliments populaires</a>
           </li>
-          <li :class="{ 'is-active': activeTab === 'restaurants' }">
+          <li :class="{ 'is-active': activeTab === 'restaurants' }" class="tab-item">
             <a @click="activeTab = 'restaurants'">Restaurants populaires</a>
           </li>
         </ul>
@@ -58,37 +22,17 @@
   </div>
 </template>
 
-
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useRestaurants } from '@/composables/useRestaurants'
 import RecetteComponent from '@/components/RecetteComponent.vue'
 import RestaurantComponent from '@/components/RestaurantComponent.vue'
 
-//const { aliments } = useCalories()
 const { restaurants } = useRestaurants()
 const searchTermRecettes = ref('')
 const searchTermRestaurants = ref('')
 const aliments = ref([])
 const activeTab = ref('aliments')
-
-const filteredAliments = computed(() => {
-  if (!searchTermRecettes.value) return aliments.value
-  const lowercasedTerm = searchTermRecettes.value.toLowerCase()
-  return aliments.value.filter(aliment =>
-    aliment.nom.toLowerCase().includes(lowercasedTerm) ||
-    (aliment.ingredients && aliment.ingredients.some(ingredient => ingredient.nom.toLowerCase().includes(lowercasedTerm)))
-  )
-})
-
-const filteredRestaurants = computed(() => {
-  if (!searchTermRestaurants.value) return restaurants.value
-  const lowercasedTerm = searchTermRestaurants.value.toLowerCase()
-  return restaurants.value.filter(restaurant =>
-    restaurant.nom.toLowerCase().includes(lowercasedTerm) ||
-    (restaurant.specialites && restaurant.specialites.some(specialite => specialite.nom.toLowerCase().includes(lowercasedTerm)))
-  )
-})
 
 onMounted(async () => {
   const response = await fetch('/api/calories.json')
@@ -97,7 +41,37 @@ onMounted(async () => {
 })
 </script>
 
+<style scoped>
+.tabs-list {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #ddd;
+}
 
+.tab-item {
+  list-style: none;
+  margin: 0 10px;
+}
 
+.tab-item a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
 
-<style lang="scss"></style>
+.tab-item a:hover {
+  background-color: #f5f5f5;
+}
+
+.tab-item.is-active a {
+  background-color: #fff;
+  border-color: #ddd;
+  border-bottom-color: transparent;
+  color: #000;
+  font-weight: bold;
+}
+</style>
