@@ -14,11 +14,13 @@
                         </figure>
                     </div>
                     <div class="leplate-content">
+                        <h2 class="momo title is-4">{{ aliment.nom }}</h2>
                         <div class="columns">
                             <div class="column is-9">
-                                <h2 class="title is-4">{{ aliment.nom }}</h2>
-                                <p class="subtitle is-6">Calories par portion : {{ aliment.calories_totales }}</p>
-                                <div v-if="aliment.ingredients && aliment.ingredients.length" class="tags is-centered">
+                                <p class="subtitle is-6">Calories par portion : <span>{{ aliment.calories_totales
+                                        }}</span></p>
+                                <div v-if="aliment.ingredients && aliment.ingredients.length"
+                                    class="tags is-justify-content-start">
                                     <span v-for="ingredient in aliment.ingredients" :key="ingredient.nom"
                                         class="tag is-primary">
                                         {{ ingredient.nom }} ({{ ingredient.calories }}
@@ -27,25 +29,21 @@
                                 </div>
                             </div>
 
-                            <div class="column is-4">
+                            <div class="column is-3">
                                 <div class="field has-addons is-justify-content-center">
-                                    <div class="is-flex ">
+                                    <div class="is-flex paabo">
                                         <div class="poutube">
+                                            <span>Nombre de calories</span>
                                             <div class="control">
                                                 <input class="input is-rounded" type="number" v-model="aliment.portions"
                                                     min="1" :placeholder="aliment.portions || 1">
                                             </div>
-                                            <div class="control">
-                                                <a class="button is-primary is-rounded">
-                                                    Portions
-                                                </a>
-                                            </div>
                                         </div>
                                         <div class="totalclro">
-                                            <p class="mt-2">Total des calories : {{ aliment.calories_totales *
+                                            <p class="mt-2">Total des calories : <span>{{ aliment.calories_totales *
                                                 (aliment.portions ||
                                                     1)
-                                                }}
+                                                    }}</span>
                                             </p>
                                         </div>
                                     </div>
