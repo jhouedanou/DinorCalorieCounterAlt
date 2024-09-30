@@ -9,6 +9,8 @@
             <div v-for="aliment in filteredAliments" :key="aliment.nom" class="column is-12">
                 <div class="leplate columns">
                     <div class="leplate-image column is-3">
+                        <p class="subtitle is-6">Calories par portion : <span>{{ aliment.calories_totales
+                                }}</span></p>
                         <figure class="image is-4by3">
                             <img :src="aliment.image" :alt="aliment.nom">
                         </figure>
@@ -17,14 +19,13 @@
                         <h2 class="momo title is-4">{{ aliment.nom }}</h2>
                         <div class="columns">
                             <div class="column is-9">
-                                <p class="subtitle is-6">Calories par portion : <span>{{ aliment.calories_totales
-                                        }}</span></p>
+
                                 <div v-if="aliment.ingredients && aliment.ingredients.length"
                                     class="tags is-justify-content-start">
                                     <span v-for="ingredient in aliment.ingredients" :key="ingredient.nom"
-                                        class="tag is-primary">
-                                        {{ ingredient.nom }} ({{ ingredient.calories }}
-                                        cal)
+                                        class="tag is-primary" @click="toggleIngredient(aliment, ingredient)"
+                                        :class="{ 'is-light': !ingredient.selected }">
+                                        {{ ingredient.nom }} ({{ ingredient.calories }} cal)
                                     </span>
                                 </div>
                             </div>
@@ -40,11 +41,11 @@
                                             </div>
                                         </div>
                                         <div class="totalclro">
-                                            <p class="mt-2">Total des calories : <span>{{ aliment.calories_totales *
-                                                (aliment.portions ||
-                                                    1)
-                                                    }}</span>
-                                            </p>
+                                            <p class="mt-2">Total des calories : <span>{{
+                                                aliment.calories_totales * (aliment.portions || 1) -
+                                                aliment.ingredients.reduce((sum, ing) => ing.selected === false ?
+                                                    sum + ing.calories : sum, 0)
+                                                    }}</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -78,4 +79,31 @@ const filteredAliments = computed(() => {
 const filterCategory = (category) => {
     selectedCategory.value = category
 }
+
+const toggleIngredient = (aliment, ingredient) => {
+    ingredient.selected = !ingredient.selected
+}
+
+const calculateTotalCalories = (aliment) => {
+    const baseCalories = aliment.calories_totales * (aliment.portions || 1)
+    const selectedIngredients = aliment.ingredients.filter(ing => ing.selected !== false)
+    const selectedCalories = selectedIngredients.reduce((sum, ing) => sum + ing.calories, 0)
+    return baseCalories - (aliment.calories_totales - selectedCalories)
+}
+props.aliments.forEach(aliment => {
+    aliment.ingredients.forEach(ingredient => {
+        ingredient.selected = true
+    })
+})
 </script>
+
+<style scoped>
+.tag {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tag.is-light {
+    opacity: 0.6;
+}
+</style>

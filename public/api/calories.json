@@ -2,7 +2,7 @@
     "aliments": [
         {
             "nom": "Attiéké-Poisson",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/01.webp",
             "ingredients": [
                 {
                     "nom": "Attiéké (semoule de manioc)",
@@ -30,7 +30,7 @@
         },
         {
             "nom": "Foutou Banane",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/02.webp",
             "ingredients": [
                 {
                     "nom": "Banane plantain",
@@ -50,7 +50,7 @@
         },
         {
             "nom": "Kedjenou de Poulet",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/03.webp",
             "ingredients": [
                 {
                     "nom": "Poulet",
@@ -82,7 +82,7 @@
         },
         {
             "nom": "Alloco",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/04.webp",
             "ingredients": [
                 {
                     "nom": "Banane plantain frite",
@@ -102,7 +102,7 @@
         },
         {
             "nom": "Garba",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/05.webp",
             "ingredients": [
                 {
                     "nom": "Attiéké",
@@ -130,7 +130,7 @@
         },
         {
             "nom": "Riz Sauce Arachide",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/06.webp",
             "ingredients": [
                 {
                     "nom": "Riz blanc",
@@ -162,7 +162,7 @@
         },
         {
             "nom": "Soupe de Poisson",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/07.webp",
             "ingredients": [
                 {
                     "nom": "Poisson (capitaine)",
