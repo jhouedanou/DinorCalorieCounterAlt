@@ -423,10 +423,47 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .timbre{
+    padding:1em;
+  }
+  .same{
+    height:85px !important;
+  }
+  .filter-buttons .button, .tabs.is-toggle li a{
+    font-size:12px !important;
+  }
+
+  .poutube{
+    margin:0 !important;
+    padding:0 !important;
+    align-items:flex-start !important;
+  }
+  .filter-buttons {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  
+  .yeleen{
+    max-width:95vw !important;
+    margin:0 auto !important;
+  }
+  .listedesrecettes{
+    padding:10px !important;
+    margin:0 auto !important;
+
+  }
   .carz{
     display: flex;align-items:center;justify-content: center;flex-direction: column;
     p{
-      font-size: 2em !important;
+      padding:1em 0 !important;
+      margin:1em auto important;
+      font-size: 1em !important;
     }
       }
   .paabo{

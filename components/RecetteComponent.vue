@@ -28,7 +28,7 @@
                 </div>
             </div>
 
-            <div v-for="aliment in filteredAliments" :key="aliment.nom" class="column is-12 pb-8">
+            <div v-for="aliment in filteredAliments" :key="aliment.nom" class="column is-12 pb-8 timbre">
                 <div class="leplate columns">
                     <div class="leplate-image column is-3">
                         <p class="subtitle is-6">Calories par portion : <span>{{ aliment.calories_totales
