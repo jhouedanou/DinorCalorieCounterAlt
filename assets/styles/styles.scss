@@ -427,6 +427,17 @@ body {
   color:$primary ;
 }
 @media screen and (max-width: 768px) {
+  .column.is-4-desktop.is-12.cecila.light-background{
+    min-width:100% !important;
+    .card{
+      min-width:100% !important;
+
+    }
+    h3{
+
+      min-width:100% !important;
+    }
+  }
   .madjoua{
     padding:1em !important
   }
@@ -464,7 +475,18 @@ body {
   .filter-buttons .button, .tabs.is-toggle li a{
     font-size:12px !important;
   }
-
+.telas{
+  width: 100%;
+  margin:0 auto 1em auto !important;
+  .column{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-bottom: 2em;
+}
+}
   .poutube{
     margin:0 !important;
     padding:0 !important;
@@ -510,4 +532,30 @@ body {
     }
   }
   
+}
+
+.light-background {
+  background-color: #f5f5f5;
+}
+
+.gray-text {
+  color: #4a4a4a;
+}
+
+.gray-text h2, .gray-text h3 {
+  color: #363636;
+}
+
+.card {
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+
+.specialite-item {
+  margin-bottom: 1rem;
+}
+
+.zena {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

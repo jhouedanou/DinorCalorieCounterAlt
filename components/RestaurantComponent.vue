@@ -1,27 +1,27 @@
 <template>
     <div class="madjoua">
-        <div class="field">
-            <!-- <p class="control has-icons-left">
+        <!-- <div class="field">
+            <p class="control has-icons-left">
                 <input class="input" type="text" placeholder="Rechercher un restaurant" :value="searchTerm"
                     @input="$emit('update:searchTerm', $event.target.value)" list="restaurant-suggestions">
                 <span class="icon is-small is-left">
                     <i class="fas fa-search"></i>
                 </span>
-            </p> -->
+            </p>
             <datalist id="restaurant-suggestions">
                 <option v-for="restaurant in restaurants" :key="restaurant.nom" :value="restaurant.nom"></option>
             </datalist>
-        </div>
-        <div class="columns is-multiline">
+        </div> -->
+        <div class="columns is-multiline telas">
             <div v-for="restaurant in filteredRestaurants" :key="restaurant.nom"
-                class="column is-4-desktop is-12 cecila">
+                class="column is-4-desktop is-12 cecila light-background">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
                             <img :src="restaurant.image" :alt="restaurant.nom">
                         </figure>
                     </div>
-                    <div class="card-content">
+                    <div class="card-content gray-text">
                         <h2 class="title is-4">{{ restaurant.nom }}</h2>
                         <div v-if="restaurant.specialites && restaurant.specialites.length">
                             <ul>
@@ -32,8 +32,13 @@
                                         <span class="checkmark"></span>
                                         <div class="is-flex is-justify-content-start is-flex-direction-column">
                                             <h3 class="subtitle is-5">{{ specialite.nom }}</h3>
-                                            <p>{{ specialite.description }}
-                                                ({{ getCalories(specialite.nom) }} calories)</p>
+                                            <div
+                                                :class="['is-flex', 'is-justify-content-start', 'is-flex-direction-column', { 'show-description': specialite.selected }]">
+                                                <p>{{ specialite.description }}
+                                                </p>
+                                            </div>
+                                            <!-- <p>{{ specialite.description }}
+                                                ({{ getCalories(specialite.nom) }} calories)</p> -->
                                         </div>
                                     </label>
                                 </li>
@@ -78,11 +83,33 @@ const getRestaurantTotalCalories = (restaurant) => {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.specialite-item p {
+    display: none;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    opacity: 0;
+}
+
+.specialite-item .show-description p {
+    display: block;
+    max-height: 100px;
+    opacity: 1;
+}
+
 .specialite-item {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+
+    h3 {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
 
 .checkbox-container {
@@ -150,5 +177,33 @@ const getRestaurantTotalCalories = (restaurant) => {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.light-background {
+    background-color: #f5f5f5;
+}
+
+.gray-text {
+    color: #4a4a4a;
+}
+
+.gray-text h2,
+.gray-text h3 {
+    color: #363636;
+}
+
+.card {
+    background: white;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+
+.specialite-item {
+    margin-bottom: 1rem;
+}
+
+.zena {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 </style>
