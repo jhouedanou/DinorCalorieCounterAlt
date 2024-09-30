@@ -5,6 +5,10 @@ export default defineNuxtConfig({
   typescript: {
     strict: false
   }, 
+  // modules: [
+  //   '@nuxtjs/pwa',
+  //   // ... other modules
+  // ],
   buildModules: [
     '@nuxtjs/pwa',
   ],
