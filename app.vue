@@ -1,6 +1,5 @@
 <template>
-  <div>
-
+  <div class="container">
     <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
@@ -91,24 +90,10 @@ const filteredRestaurants = computed(() => {
 })
 </script>
 
-Copy
-
-Apply
-
-Cette modification ajoute deux champs de recherche distincts dans le header, qui s'affichent en fonction de l'onglet
-actif. La recherche est appliquée dynamiquement aux recettes ou aux restaurants selon le choix de l'utilisateur.
 
 
 
-Try again with different context
-Add context...
-Avatar for jhouedanou
-Jean Luc Houedanou
-
-
-
-
-<style>
+<style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
@@ -117,8 +102,13 @@ body {
   color: #333;
 }
 
+.container {
+  max-width: 20vw;
+  margin: 0 auto;
+}
+
 .navbar {
-  background-color: #2d9ee0;
+  background-color: #ec2f19;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -133,7 +123,8 @@ body {
 }
 
 .title {
-  color: #2d9ee0;
+  color: #ec2f19;
+
 }
 
 .subtitle {
@@ -153,14 +144,14 @@ body {
 }
 
 .button.is-primary {
-  background-color: #2d9ee0;
-  border-color: #2d9ee0;
+  background-color: #ec2f19;
+  border-color: #ec2f19;
   color: #fff;
 }
 
 .button.is-primary:hover {
-  background-color: #2589c6;
-  border-color: #2589c6;
+  background-color: #ec2f19;
+  border-color: #ec2f19;
 }
 
 .tabs a {
@@ -168,12 +159,14 @@ body {
 }
 
 .tabs li.is-active a {
-  color: #2d9ee0;
-  border-bottom-color: #2d9ee0;
+  color: #ec2f19;
+  border-bottom-color: #ec2f19;
+
 }
 
 .input:focus {
-  border-color: #2d9ee0;
+  border-color: #ec2f19;
+
 }
 
 .input.is-rounded {
