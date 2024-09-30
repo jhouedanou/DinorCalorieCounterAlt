@@ -45,28 +45,35 @@
                             </div>
                             <div class="column is-3">
                                 <div class="poutube pl-5 pr-5">
-                                    <span class="mb-4">Portions ?</span>
+                                    <!-- <span class="mb-4">Portions ?</span>
                                     <div class="control">
                                         <input class="input is-rounded" type="tel" v-model="aliment.portions"
                                             pattern="[0-9]*" inputmode="numeric" :placeholder="aliment.portions || 1">
 
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
 
                         <div class="columns">
-                            <div class="column is-9">
-                                <p class="p-2">Sélectionnez les ingrédients du plat en cliquant sur les élements
-                                    ci-dessous </p>
+                            <div class="column is-9 is-12-mobile kanak">
+                                <!-- <p class="p-2">Sélectionnez les ingrédients du plat en cliquant sur les élements
+                                    ci-dessous </p> -->
                                 <div v-if="aliment.ingredients && aliment.ingredients.length"
                                     class="tags is-justify-content-start">
-                                    <span v-for="ingredient in aliment.ingredients" :key="ingredient.nom"
-                                        class="tag is-primary" @click="toggleIngredient(aliment, ingredient)"
-                                        :class="{ 'is-light': !ingredient.selected }">
-                                        {{ ingredient.nom }} ({{ ingredient.calories }} cal)
-                                    </span>
+                                    <div v-for="ingredient in aliment.ingredients" :key="ingredient.nom"
+                                        class="ingredient-item">
+                                        <label class="ingredient-label">
+                                            <input type="checkbox" v-model="ingredient.selected">
+                                            {{ ingredient.nom }} ({{ ingredient.calories }} cal)
+                                        </label>
+                                        <input v-if="ingredient.selected" type="number" v-model="ingredient.portions"
+                                            min="1">
+                                    </div>
                                 </div>
+                                <!-- <div class="mt-4">
+                                    <p>Total des calories : {{ calculateTotalCalories(aliment) }} Kcal</p>
+                                </div> -->
                             </div>
 
                             <div class="column is-3">
@@ -74,11 +81,16 @@
                                     <div class="is-flex paabo">
 
                                         <div class="totalclro">
-                                            <p class="mt-2">Total des calories : <span>{{
+                                            <p class="mt-2">Total des calories :
+                                                <!-- <span>{{
                                                 aliment.calories_totales * (aliment.portions || 1) -
                                                 aliment.ingredients.reduce((sum, ing) => !ing.selected ? sum +
                                                     ing.calories : sum, 0)
-                                                    }}</span> Kcal</p>
+                                                    }}</span> -->
+                                                <span> {{ calculateTotalCalories(aliment) }}</span>
+
+                                                Kcal
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -160,10 +172,12 @@ const initializeIngredients = () => {
 }
 
 const calculateTotalCalories = (aliment) => {
-    const baseCalories = aliment.calories_totales * (aliment.portions || 1)
-    const selectedIngredients = aliment.ingredients.filter(ing => ing.selected !== false)
-    const selectedCalories = selectedIngredients.reduce((sum, ing) => sum + ing.calories, 0)
-    return baseCalories - (aliment.calories_totales - selectedCalories)
+    return aliment.ingredients.reduce((total, ingredient) => {
+        if (ingredient.selected) {
+            return total + (ingredient.calories * (ingredient.portions || 1));
+        }
+        return total;
+    }, 0);
 }
 
 const handleFocus = () => {
