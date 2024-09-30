@@ -1,7 +1,5 @@
 <template>
     <div>
-
-
         <div class="columns is-multiline jordn listedesrecettes">
             <div class="filter-buttons column is-12">
                 <button v-for="category in categories" :key="category" @click="filterCategory(category)" class="button">
@@ -18,19 +16,18 @@
                     <div class="leplate-content">
                         <div class="columns">
                             <div class="column is-9">
-                                <h2 class="title is-4">{{ getEmoji(aliment.nom) }} {{ aliment.nom }}</h2>
+                                <h2 class="title is-4">{{ aliment.nom }}</h2>
                                 <p class="subtitle is-6">Calories par portion : {{ aliment.calories_totales }}</p>
                                 <div v-if="aliment.ingredients && aliment.ingredients.length" class="tags is-centered">
                                     <span v-for="ingredient in aliment.ingredients" :key="ingredient.nom"
                                         class="tag is-primary">
-                                        {{ getEmoji(ingredient.nom) }} {{ ingredient.nom }} ({{ ingredient.calories }}
+                                        {{ ingredient.nom }} ({{ ingredient.calories }}
                                         cal)
                                     </span>
                                 </div>
                             </div>
 
                             <div class="column is-4">
-
                                 <div class="field has-addons is-justify-content-center">
                                     <div class="is-flex ">
                                         <div class="poutube">
@@ -52,20 +49,14 @@
                                             </p>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
 </template>
 
 <script setup>
@@ -88,12 +79,5 @@ const filteredAliments = computed(() => {
 
 const filterCategory = (category) => {
     selectedCategory.value = category
-}
-const getEmoji = (nom) => {
-    const emojiMap = {
-        'Attiéké': '🍚', 'Poisson': '🐟', 'Banane': '🍌', 'Poulet': '🍗',
-        'Riz': '🍚', 'Tomate': '🍅', 'Oignon': '🧅', 'Piment': '🌶️',
-    }
-    return emojiMap[nom] || '🍽️'
 }
 </script>
