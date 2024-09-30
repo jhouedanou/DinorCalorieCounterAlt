@@ -427,6 +427,9 @@ body {
   color:$primary ;
 }
 @media screen and (max-width: 768px) {
+  .madjoua{
+    padding:1em !important
+  }
   .mado {
     position: sticky;
     top: 0;

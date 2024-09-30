@@ -13,7 +13,8 @@
             </datalist>
         </div>
         <div class="columns is-multiline">
-            <div v-for="restaurant in filteredRestaurants" :key="restaurant.nom" class="column is-4-desktop is-12">
+            <div v-for="restaurant in filteredRestaurants" :key="restaurant.nom"
+                class="column is-4-desktop is-12 cecila">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
