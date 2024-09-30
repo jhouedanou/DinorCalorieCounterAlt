@@ -28,7 +28,7 @@
                 </div>
             </div>
 
-            <div v-for="aliment in filteredAliments" :key="aliment.nom" class="column is-12 pb-8">
+            <div v-for="aliment in filteredAliments" :key="aliment.nom" class="column is-12 pb-8 fassa">
                 <div class="leplate columns">
                     <div class="leplate-image column is-3">
                         <p class="subtitle is-6">Calories par portion : <span>{{ aliment.calories_totales
@@ -45,7 +45,7 @@
                             </div>
                             <div class="column is-3">
                                 <div class="poutube pl-5 pr-5">
-                                    <span class="mb-4">Combien de portions ?</span>
+                                    <span class="mb-4">Portions ?</span>
                                     <div class="control">
                                         <input class="input is-rounded" type="tel" v-model="aliment.portions"
                                             pattern="[0-9]*" inputmode="numeric" :placeholder="aliment.portions || 1">

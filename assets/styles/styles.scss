@@ -427,6 +427,17 @@ body {
   color:$primary ;
 }
 @media screen and (max-width: 768px) {
+  .mado {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff; /* Assurez-vous que le fond n'est pas transparent */
+    padding: 10px 0; /* Ajoutez un peu de padding pour l'esthétique */
+  }
+  
+  .fassa{
+    width: 100% !important;
+  }
   .leplate-content{
     padding:0em;
     width:100%;
