@@ -13,7 +13,7 @@
                     <div class="field">
                         <p class="control has-icons-left has-icons-right">
                             <input class="input" type="text" placeholder="Rechercher un aliment" v-model="searchQuery"
-                                @focus="handleFocus" @blur="handleBlur" list="suggestions-list">
+                                @focus="handleFocus" @blur="handleBlur" @input="handleSearch" list="suggestions-list">
                             <span class="icon is-small is-left">
                                 <span class="material-icons">search</span>
                             </span>
@@ -45,12 +45,7 @@
                             </div>
                             <div class="column is-3">
                                 <div class="poutube pl-5 pr-5">
-                                    <!-- <span class="mb-4">Portions ?</span>
-                                    <div class="control">
-                                        <input class="input is-rounded" type="tel" v-model="aliment.portions"
-                                            pattern="[0-9]*" inputmode="numeric" :placeholder="aliment.portions || 1">
 
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -186,6 +181,16 @@ const handleFocus = () => {
 
 const handleBlur = () => {
     isInputFocused.value = false
+}
+// const resetFilters = () => {
+//   selectedCategory.value = 'Tous'
+// }
+
+const handleSearch = (event) => {
+    searchQuery.value = event.target.value
+    if (searchQuery.value) {
+        resetFilters()
+    }
 }
 
 onMounted(() => {
