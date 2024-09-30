@@ -13,7 +13,7 @@
             </datalist>
         </div>
         <div class="columns is-multiline">
-            <div v-for="restaurant in filteredRestaurants" :key="restaurant.nom" class="column is-one-third">
+            <div v-for="restaurant in filteredRestaurants" :key="restaurant.nom" class="column is-4-desktop is-12">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
@@ -39,10 +39,10 @@
                             </ul>
                         </div>
                         <div class="mt-4 zena">
-                            <strong>Total des calories sélectionnées :</strong>
+                            <strong>Total des calories:</strong>
                             <h4>{{
                                 getRestaurantTotalCalories(restaurant) }}</h4>
-
+                            <strong>calories</strong>
                         </div>
                     </div>
                 </div>

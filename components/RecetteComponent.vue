@@ -79,7 +79,7 @@
                                                 aliment.calories_totales * (aliment.portions || 1) -
                                                 aliment.ingredients.reduce((sum, ing) => !ing.selected ? sum +
                                                     ing.calories : sum, 0)
-                                                    }}</span> Kcal</p>
+                                                    }}</span> calories</p>
                                         </div>
                                     </div>
                                 </div>
