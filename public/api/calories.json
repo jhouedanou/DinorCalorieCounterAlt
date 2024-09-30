@@ -2,7 +2,7 @@
     "aliments": [
         {
             "nom": "Attiéké-Poisson",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Attiéké (semoule de manioc)",
@@ -25,11 +25,12 @@
                     "calories": 5
                 }
             ],
+            "categorie": "grill",
             "calories_totales": 400
         },
         {
             "nom": "Foutou Banane",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Banane plantain",
@@ -44,11 +45,12 @@
                     "calories": 150
                 }
             ],
+            "categorie": "local",
             "calories_totales": 500
         },
         {
             "nom": "Kedjenou de Poulet",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Poulet",
@@ -75,11 +77,12 @@
                     "calories": 10
                 }
             ],
+            "categorie": "cuisine locale",
             "calories_totales": 340
         },
         {
             "nom": "Alloco",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Banane plantain frite",
@@ -94,11 +97,12 @@
                     "calories": 20
                 }
             ],
+            "categorie": "grill",
             "calories_totales": 420
         },
         {
             "nom": "Garba",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Attiéké",
@@ -121,11 +125,12 @@
                     "calories": 50
                 }
             ],
+            "categorie": "grill",
             "calories_totales": 405
         },
         {
             "nom": "Riz Sauce Arachide",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Riz blanc",
@@ -152,11 +157,12 @@
                     "calories": 5
                 }
             ],
+            "categorie": "traditionel",
             "calories_totales": 700
         },
         {
             "nom": "Soupe de Poisson",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Poisson (capitaine)",
@@ -183,11 +189,12 @@
                     "calories": 5
                 }
             ],
+            "categorie": "grill",
             "calories_totales": 345
         },
         {
             "nom": "Placali Sauce Graine",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Placali (pâte de manioc)",
@@ -214,11 +221,12 @@
                     "calories": 5
                 }
             ],
+            "categorie": "grill",
             "calories_totales": 650
         },
         {
             "nom": "Tchep au Poulet",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Riz",
@@ -245,11 +253,12 @@
                     "calories": 5
                 }
             ],
+            "categorie": "grill",
             "calories_totales": 530
         },
         {
             "nom": "Poulet Braisé avec Attiéké",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Poulet braisé",
@@ -272,11 +281,12 @@
                     "calories": 5
                 }
             ],
+            "categorie": "grill",
             "calories_totales": 450
         },
         {
             "nom": "Riz Sauce Feuille (Sauce Tôh)",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Riz blanc",
@@ -303,11 +313,12 @@
                     "calories": 5
                 }
             ],
+            "categorie": "grill",
             "calories_totales": 500
         },
         {
             "nom": "Kokodé",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Igname",
@@ -330,11 +341,12 @@
                     "calories": 50
                 }
             ],
+            "categorie": "grill",
             "calories_totales": 325
         },
         {
             "nom": "N'voufou",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Banane plantain",
@@ -357,11 +369,12 @@
                     "calories": 20
                 }
             ],
+            "categorie": "cuisine locale",
             "calories_totales": 595
         },
         {
             "nom": "Sauce Djoumblé",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Viande de bœuf",
@@ -384,11 +397,12 @@
                     "calories": 5
                 }
             ],
+            "categorie": "cuisine locale",
             "calories_totales": 500
         },
         {
             "nom": "Kékérenou",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Igname",
@@ -411,11 +425,12 @@
                     "calories": 5
                 }
             ],
+            "categorie": "cuisine locale",
             "calories_totales": 625
         },
         {
             "nom": "Soupe Kabato",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Riz",
@@ -438,11 +453,12 @@
                     "calories": 5
                 }
             ],
+            "categorie": "sauces",
             "calories_totales": 400
         },
         {
             "nom": "Akpessi",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Igname",
@@ -465,11 +481,12 @@
                     "calories": 5
                 }
             ],
+            "categorie": "sauces",
             "calories_totales": 345
         },
         {
             "nom": "Djenkoumé",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Semoule de maïs",
@@ -492,11 +509,12 @@
                     "calories": 5
                 }
             ],
+            "categorie": "cuisine locale",
             "calories_totales": 350
         },
         {
             "nom": "Riz Cantonais",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Riz",
@@ -519,11 +537,12 @@
                     "calories": 20
                 }
             ],
+            "categorie": "asiatique",
             "calories_totales": 570
         },
         {
             "nom": "Gnammankoudji",
-            "image":"https://dummyimage.com/600x400/000/fff",
+            "image": "https://dummyimage.com/600x400/000/fff",
             "ingredients": [
                 {
                     "nom": "Aubergines",
@@ -546,6 +565,7 @@
                     "calories": 5
                 }
             ],
+            "categorie": "boissons",
             "calories_totales": 400
         }
     ]

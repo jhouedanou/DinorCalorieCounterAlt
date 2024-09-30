@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <div class="yeleen container">
+
     <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
@@ -51,7 +52,7 @@
         </ul>
       </div>
 
-      <RecetteComponent v-if="activeTab === 'aliments'" :aliments="filteredAliments" />
+      <RecetteComponent v-if="activeTab === 'aliments'" :aliments="aliments" />
       <RestaurantComponent v-if="activeTab === 'restaurants'" :restaurants="restaurants" />
     </div>
   </div>
@@ -59,16 +60,16 @@
 
 
 <script setup>
-import { ref, computed } from 'vue'
-import { useCalories } from '@/composables/useCalories'
+import { ref, computed, onMounted } from 'vue'
 import { useRestaurants } from '@/composables/useRestaurants'
 import RecetteComponent from '@/components/RecetteComponent.vue'
 import RestaurantComponent from '@/components/RestaurantComponent.vue'
 
-const { aliments } = useCalories()
+//const { aliments } = useCalories()
 const { restaurants } = useRestaurants()
 const searchTermRecettes = ref('')
 const searchTermRestaurants = ref('')
+const aliments = ref([])
 const activeTab = ref('aliments')
 
 const filteredAliments = computed(() => {
@@ -88,96 +89,15 @@ const filteredRestaurants = computed(() => {
     (restaurant.specialites && restaurant.specialites.some(specialite => specialite.nom.toLowerCase().includes(lowercasedTerm)))
   )
 })
+
+onMounted(async () => {
+  const response = await fetch('/api/calories.json')
+  const data = await response.json()
+  aliments.value = data.aliments
+})
 </script>
 
 
 
 
-<style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fafafa;
-  color: #333;
-}
-
-.container {
-  max-width: 20vw;
-  margin: 0 auto;
-}
-
-.navbar {
-  background-color: #ec2f19;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-item {
-  color: #fff;
-  font-weight: bold;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.title {
-  color: #ec2f19;
-
-}
-
-.subtitle {
-  color: #333;
-}
-
-.card {
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  background-color: #fff;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.button.is-primary {
-  background-color: #ec2f19;
-  border-color: #ec2f19;
-  color: #fff;
-}
-
-.button.is-primary:hover {
-  background-color: #ec2f19;
-  border-color: #ec2f19;
-}
-
-.tabs a {
-  color: #666;
-}
-
-.tabs li.is-active a {
-  color: #ec2f19;
-  border-bottom-color: #ec2f19;
-
-}
-
-.input:focus {
-  border-color: #ec2f19;
-
-}
-
-.input.is-rounded {
-  border-radius: 30px;
-}
-
-.field.has-addons .control .input {
-  border-radius: 30px 0 0 30px;
-}
-
-.button.is-rounded {
-  border-radius: 30px;
-}
-</style>
+<style lang="scss"></style>
