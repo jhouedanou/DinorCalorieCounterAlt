@@ -5,16 +5,19 @@
             "image": "https://dummyimage.com/600x400/000/fff",
             "specialites": [
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Poisson braisé",
                     "description": "Poisson grillé servi avec de l'attiéké, des oignons, et une sauce pimentée.",
                     "calories": 400
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Alloco",
                     "description": "Banane plantain frite servie avec une sauce tomate épicée.",
                     "calories": 450
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Poulet braisé",
                     "description": "Poulet grillé à la braise, mariné avec des épices locales.",
                     "calories": 500
@@ -26,16 +29,19 @@
             "image": "https://dummyimage.com/600x400/000/fff",
             "specialites": [
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Garba",
                     "description": "Attiéké accompagné de thon frit, d'oignons, de piment et d'huile.",
                     "calories": 600
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Placali Sauce Graine",
                     "description": "Pâte de manioc servie avec une sauce épaisse à base de graines de palme.",
                     "calories": 700
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Foutou Banane",
                     "description": "Purée de banane plantain servie avec une sauce graine épicée.",
                     "calories": 600
@@ -47,16 +53,19 @@
             "image": "https://dummyimage.com/600x400/000/fff",
             "specialites": [
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Kédjenou de Poulet",
                     "description": "Poulet mijoté aux légumes dans une sauce légère et épicée.",
                     "calories": 350
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Riz Sauce Arachide",
                     "description": "Riz blanc accompagné d'une sauce crémeuse à base d'arachides et de viande de bœuf.",
                     "calories": 700
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Soupe de Poisson",
                     "description": "Soupe épicée à base de poisson frais, légumes et piment.",
                     "calories": 400
@@ -68,16 +77,19 @@
             "image": "https://dummyimage.com/600x400/000/fff",
             "specialites": [
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Riz Sauce Feuille",
                     "description": "Riz blanc servi avec une sauce à base de feuilles locales et de viande de bœuf.",
                     "calories": 600
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Tchep au Poulet",
                     "description": "Riz parfumé cuit avec des légumes et accompagné de poulet braisé.",
                     "calories": 550
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Akpessi",
                     "description": "Igname cuite à la vapeur servie avec une sauce tomate et un œuf dur.",
                     "calories": 350
@@ -89,16 +101,19 @@
             "image": "https://dummyimage.com/600x400/000/fff",
             "specialites": [
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "N'voufou",
                     "description": "Purée de banane plantain et de manioc servie avec une sauce arachide.",
                     "calories": 700
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Alloco",
                     "description": "Banane plantain frite accompagnée d'oignons et de piment.",
                     "calories": 450
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Sauce Djoumblé",
                     "description": "Viande de bœuf cuite dans une sauce épicée à base de graines de djoumblé.",
                     "calories": 600
@@ -110,16 +125,19 @@
             "image": "https://dummyimage.com/600x400/000/fff",
             "specialites": [
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Kokodé",
                     "description": "Igname bouillie servie avec une sauce tomate pimentée.",
                     "calories": 400
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Kékérenou",
                     "description": "Igname accompagnée d'une sauce arachide et de poulet fumé.",
                     "calories": 700
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Soupe Kabato",
                     "description": "Soupe épicée à base de poisson fumé, riz et gombo.",
                     "calories": 500
@@ -131,16 +149,19 @@
             "image": "https://dummyimage.com/600x400/000/fff",
             "specialites": [
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Djenkoumé",
                     "description": "Semoule de maïs cuite à la sauce tomate avec des épices.",
                     "calories": 350
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Poulet Braisé",
                     "description": "Poulet mariné puis grillé à la braise, servi avec de l'attiéké.",
                     "calories": 500
                 },
                 {
+                    "subImage": "https://dummyimage.com/120x120/000/fff",
                     "nom": "Placali",
                     "description": "Pâte de manioc fermentée servie avec une sauce graine.",
                     "calories": 600

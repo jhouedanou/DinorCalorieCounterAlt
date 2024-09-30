@@ -24,25 +24,35 @@
                     <div class="card-content gray-text">
                         <h2 class="title is-4">{{ restaurant.nom }}</h2>
                         <div v-if="restaurant.specialites && restaurant.specialites.length">
-                            <ul>
+                            <!-- <ul>
                                 <li v-for="specialite in restaurant.specialites" :key="specialite.nom"
                                     class="specialite-item">
                                     <label class="checkbox-container">
                                         <input type="checkbox" v-model="specialite.selected">
                                         <span class="checkmark"></span>
                                         <div class="is-flex is-justify-content-start is-flex-direction-column">
-                                            <h3 class="subtitle is-5">{{ specialite.nom }}</h3>
+                                            <h3 class="subtitle is-5 malik">{{ specialite.nom }}</h3>
                                             <div
                                                 :class="['is-flex', 'is-justify-content-start', 'is-flex-direction-column', { 'show-description': specialite.selected }]">
                                                 <p>{{ specialite.description }}
                                                 </p>
                                             </div>
-                                            <!-- <p>{{ specialite.description }}
-                                                ({{ getCalories(specialite.nom) }} calories)</p> -->
                                         </div>
                                     </label>
                                 </li>
-                            </ul>
+                            </ul> -->
+                            <div v-if="restaurant.specialites && restaurant.specialites.length"
+                                class="specialites-grid">
+                                <div v-for="specialite in restaurant.specialites" :key="specialite.nom"
+                                    class="specialite-item">
+                                    <div class="image-container" @click="toggleSpecialite(specialite)">
+                                        <img :src="specialite.subImage || 'https://dummyimage.com/150x150'"
+                                            :alt="specialite.nom" class="specialite-image">
+                                        <div class="overlay" :class="{ 'selected': specialite.selected }"></div>
+                                    </div>
+                                    <span class="specialite-nom">{{ specialite.nom }}</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="mt-4 zena">
                             <strong>Total des calories:</strong>
@@ -71,16 +81,22 @@ const filteredRestaurants = computed(() => {
         (restaurant.specialites && restaurant.specialites.some(specialite => specialite.nom.toLowerCase().includes(lowercasedTerm)))
     )
 })
-const getCalories = (nom) => {
-    const aliment = aliments.value.find(a => a.nom === nom)
-    return aliment ? aliment.calories_totales : 0
+const getCalories = (specialite) => {
+    return specialite.calories || 0;
 }
+
 
 const getRestaurantTotalCalories = (restaurant) => {
     return restaurant.specialites.reduce((total, specialite) => {
-        return total + (specialite.selected ? getCalories(specialite.nom) : 0)
-    }, 0)
+        console.log(`Spécialité: ${specialite.nom}, Calories: ${specialite.calories}, Sélectionné: ${specialite.selected}`);
+        return total + (specialite.selected ? specialite.calories : 0);
+    }, 0);
 }
+
+const toggleSpecialite = (specialite) => {
+    specialite.selected = !specialite.selected;
+}
+
 </script>
 
 <style lang="scss" scoped>
@@ -205,5 +221,60 @@ const getRestaurantTotalCalories = (restaurant) => {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+
+.specialites-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.specialite-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+}
+
+.specialite-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.overlay.selected {
+    opacity: 1;
+}
+
+.specialite-nom {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ec2f19;
+}
+
+.image-container {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
 }
 </style>
