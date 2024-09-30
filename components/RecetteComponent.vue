@@ -12,8 +12,8 @@
                 <div class="cyvzp">
                     <div class="field">
                         <p class="control has-icons-left has-icons-right">
-                            <input class="input" type="text" placeholder="Cliquez pour rechercher un aliment"
-                                v-model="searchQuery" @focus="handleFocus" @blur="handleBlur" list="suggestions-list">
+                            <input class="input" type="text" placeholder="Rechercher un aliment" v-model="searchQuery"
+                                @focus="handleFocus" @blur="handleBlur" list="suggestions-list">
                             <span class="icon is-small is-left">
                                 <span class="material-icons">search</span>
                             </span>
@@ -28,7 +28,7 @@
                 </div>
             </div>
 
-            <div v-for="aliment in filteredAliments" :key="aliment.nom" class="column is-12 pb-8 timbre">
+            <div v-for="aliment in filteredAliments" :key="aliment.nom" class="column is-12 pb-8">
                 <div class="leplate columns">
                     <div class="leplate-image column is-3">
                         <p class="subtitle is-6">Calories par portion : <span>{{ aliment.calories_totales
@@ -47,13 +47,12 @@
                                 <div class="poutube pl-5 pr-5">
                                     <span class="mb-4">Combien de portions ?</span>
                                     <div class="control">
-                                        <input class="input is-rounded" type="number" v-model="aliment.portions" min="1"
-                                            :placeholder="aliment.portions || 1">
+                                        <input class="input is-rounded" type="tel" v-model="aliment.portions"
+                                            pattern="[0-9]*" inputmode="numeric" :placeholder="aliment.portions || 1">
+
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
 
                         <div class="columns">
@@ -79,7 +78,7 @@
                                                 aliment.calories_totales * (aliment.portions || 1) -
                                                 aliment.ingredients.reduce((sum, ing) => !ing.selected ? sum +
                                                     ing.calories : sum, 0)
-                                                    }}</span> calories</p>
+                                                    }}</span> Kcal</p>
                                         </div>
                                     </div>
                                 </div>

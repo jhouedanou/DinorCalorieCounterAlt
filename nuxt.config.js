@@ -5,8 +5,9 @@ export default defineNuxtConfig({
   typescript: {
     strict: false
   },
-  css: ['bulma/css/bulma.min.css',
-    '@/assets/styles/styles.scss'
+  css: [
+    '@/assets/styles/styles.scss',
+    'bulma/css/bulma.min.css'
   ],
   head: {
     title:"DINOR APP - Calculateur de calories",  meta: [
