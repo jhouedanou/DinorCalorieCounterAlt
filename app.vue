@@ -1,4 +1,6 @@
 <template>
+  <Splashpage v-if="showSplash" />
+
   <div :class="{ 'overlay-active': showOverlay }">
     <div class="yeleen container">
       <div class="container mt-0 pt-6">
@@ -22,14 +24,16 @@
       </div>
     </div>
     <div v-if="showOverlay" class="overlay">
-      <p>Pour une meilleure expérience, veuillez utiliser DinorApp sur votre mobile :</p>
+      <p>Pour une meilleure expérience, veuillez utiliser cette page dans l'application DinorApp<br>Disponible sur votre
+        mobile :</p><br>
       <br>
       <div class="store-links">
         <a href="https://play.google.com/store/apps/details?id=com.bfedition.dinorapp&hl=fr" target="_blank">
-          <i class="fab fa-google-play"></i> Google Play
+          <nuxt-img src="/images/googleplay.png" class="same" alt="" format="webp" quality="80" />
         </a>
         <a href="https://apps.apple.com/tr/app/dinor-app/id1515571306" target="_blank">
-          <i class="fab fa-app-store-ios"></i> App Store
+          <nuxt-img src="/images/apple.png" class="same" alt="" format="webp" quality="80" />
+
         </a>
       </div>
     </div>
@@ -41,14 +45,23 @@ import { ref, onMounted } from 'vue'
 import { useRestaurants } from '@/composables/useRestaurants'
 import RecetteComponent from '@/components/RecetteComponent.vue'
 import RestaurantComponent from '@/components/RestaurantComponent.vue'
+import Splashpage from '@/components/Splashpage.vue';
 
 const { restaurants } = useRestaurants()
 const searchTermRecettes = ref('')
 const searchTermRestaurants = ref('')
 const aliments = ref([])
 const activeTab = ref('aliments')
-const showOverlay = ref(false)
 
+const showSplash = ref(true);
+
+onMounted(() => {
+  setTimeout(() => {
+    showSplash.value = false;
+  }, 7000);
+});
+//overlay pour les ordinateur s
+const showOverlay = ref(false)
 const isLargeScreen = computed(() => {
   return window.innerWidth > 768
 })
@@ -98,5 +111,12 @@ onMounted(async () => {
   border-bottom-color: transparent;
   color: #000;
   font-weight: bold;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 </style>
