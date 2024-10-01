@@ -429,6 +429,44 @@ body {
 
 @media screen and (max-width: 768px) {
 
+
+.zingredients {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* Pour un défilement fluide sur iOS */
+}
+
+.mouff {
+  flex: 0 0 auto;
+  margin-right: 10px; /* Espace entre les éléments */
+}
+
+.ingredient-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  padding-bottom: 5px;
+}
+
+/* Masquer la barre de défilement pour une meilleure esthétique */
+.zingredients::-webkit-scrollbar {
+  display: none;
+}
+
+.zingredients {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+  .zingredients{
+
+    .mouff{
+      width:150px;
+    }
+  }
   .mado{ .cyvzp{ 
     .field{
       padding:0;
@@ -447,7 +485,7 @@ body {
   .momo{
     padding:0em !important;
     margin-bottom: 0em !important;
-    font-size:14px !important;
+    font-size:18px !important;
     line-height: 1.2 !important;
   }
   .nompdt{
@@ -481,7 +519,7 @@ body {
   
   .fassa{
     width: 100% !important;
-    padding:0 1rem 0 0rem !important;
+    padding:0 1rem!important;
   }
   .leplate-content{
     padding:0em;
@@ -574,7 +612,9 @@ body {
   }
   
 }
-
+.leplate{
+  padding-top: 3em;
+}
 .light-background {
   background-color: #f5f5f5;
 }
@@ -595,37 +635,12 @@ body {
   margin-bottom: 1rem;
 }
 .ingredient-item{
-  width: 100% !important;
   background: #EEE;
   display: flex;
   flex-direction: row;
   padding: 10px;
   border: 0.005em #bebebe solid;
-  width: 100% !important;
-  input[type="number"]
-    {
-    width: 100% !important;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    margin-bottom: 1em;
-    -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    -moz-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    -ms-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
+ 
 }
 .zena {
   display: flex;
@@ -661,4 +676,116 @@ body {
 }
 .visuelproduct{
   position:relative;
+}
+.popito{
+
+}
+.ingredient-label {
+  white-space: nowrap;
+  overflow-x: auto;
+  display: block;
+  padding-bottom: 5px;
+  /* Pour éviter que la barre de défilement ne coupe le texte */
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Pour masquer la barre de défilement sur certains navigateurs */
+.ingredient-label::-webkit-scrollbar {
+  display: none;
+}
+
+.ingredient-label.active {
+  background-color: #e0e0e0;
+}
+
+/* Pour Firefox */
+.ingredient-label {
+  scrollbar-width: none;
+}
+
+.emoji-icon {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .line-2{
+    padding-top: 1em;
+  }
+  .mouff {
+      max-width: 120px;
+  position: relative;
+  border-radius: 10px;
+  padding:5px;
+  background-color: #f0f0f0;
+display: flex;align-items:center;justify-content: center;flex-direction: column;
+text-align: center;
+input[type="number"]
+{
+
+  max-width: 52px !important;
+  text-align: center !important;
+padding: 0.375rem 0.75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #212529;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: 0.25rem;
+transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+margin-bottom: 1em;
+-webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+-moz-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+-ms-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+-o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.emoji-icon{
+  font-size: 15px;
+  margin: 0 20px 0 0;
+
+}
+.zagba{
+font-weight: 800;
+font-size: 15px;
+
+word-wrap: break-word;
+overflow-wrap: break-word;
+white-space: normal;
+max-width: 100px;
+}
+.lerequin {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
+}
+
+
+  }
+}
+
+.emoji-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.ingredient-label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.emoji-icon {
+  margin-right: 5px;
 }

@@ -6,6 +6,7 @@
                     :class="{ 'has-active': selectedCategory !== 'Tous', 'is-hidden': isInputFocused }">
                     <button v-for="category in categories" :key="category" @click="filterCategory(category)"
                         class="button" :class="{ 'is-active': selectedCategory === category }">
+                        {{ }}
                         {{ category }}
                     </button>
                 </div>
@@ -28,9 +29,16 @@
                 </div>
             </div>
 
+            <div class="notification is-info">
+                <div class="scroll-container">
+                    <p class="scroll-text">Faites défiler vers la droite pour voir tous les ingrédients.</p>
+                </div>
+            </div>
             <div v-for="aliment in filteredAliments" :key="aliment.nom" class="column is-12 pb-8 fassa">
+
+
                 <div class="leplate columns">
-                    <div class="leplate-image column is-8">
+                    <div class="leplate-image column is-12-mobile">
                         <div class="container">
 
                             <div class="line-1 columns is-mobile">
@@ -61,16 +69,24 @@
                             </div>
                             <div class="line-2 columns is-mobile">
 
-                                <div class="column is-8-mobile">
-                                    <div v-if="aliment.ingredients && aliment.ingredients.length"
-                                        class="tags is-justify-content-start">
+                                <div v-if="aliment.ingredients && aliment.ingredients.length" class="tags container">
+
+                                    <div class="zingredients">
                                         <div v-for="ingredient in aliment.ingredients" :key="ingredient.nom"
-                                            class="ingredient-item">
+                                            class="mouff">
                                             <label class="ingredient-label">
-                                                <input type="checkbox" v-model="ingredient.selected">
-                                                {{ ingredient.nom }} ({{ ingredient.calories }} cal)
+                                                <input type="checkbox" v-model="ingredient.selected"
+                                                    class="emoji-checkbox" :id="ingredient.nom">
+                                                <span class="emoji-icon">{{ ingredient.selected ? '✅' : ingredient.icone
+                                                    }}</span>
+                                                <p class="zagba">
+                                                    {{ ingredient.nom }}
+
+                                                </p>
+                                                <p class="lerequin">{{ ingredient.calories }} cal
+                                                </p>
                                             </label>
-                                            <input v-if="ingredient.selected" type="number"
+                                            <input v-if="ingredient.selected" type="number" :placeholder="1"
                                                 v-model="ingredient.portions" min="1">
                                         </div>
                                     </div>
@@ -78,33 +94,6 @@
                             </div>
                         </div>
 
-                    </div>
-                    <div class="leplate-content column is-4">
-                        <div class="lauei columns">
-                            <div class="column is-9 is-flex is-align-items-end">
-
-                            </div>
-                            <div class="column is-3">
-                                <div class="poutube pl-5 pr-5">
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="columns">
-                            <div class="column is-9 is-12-mobile kanak">
-                                <!-- <p class="p-2">Sélectionnez les ingrédients du plat en cliquant sur les élements
-                                    ci-dessous </p> -->
-
-                                <!-- <div class="mt-4">
-                                    <p>Total des calories : {{ calculateTotalCalories(aliment) }} Kcal</p>
-                                </div> -->
-                            </div>
-
-                            <div class="column is-3">
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -252,5 +241,11 @@ props.aliments.forEach(aliment => {
 
 .is-hidden {
     display: none;
+}
+
+.zingredients {}
+
+.mouff {
+    margin-bottom: 10px;
 }
 </style>
