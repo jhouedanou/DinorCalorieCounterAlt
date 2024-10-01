@@ -56,7 +56,7 @@
                                     <h2 class="momo title">{{ aliment.nom }}</h2>
                                     <!-- nombre de calories -->
                                     <p class="wilfried"><span>{{ aliment.calories_totales
-                                            }}</span> calories</p>
+                                            }}</span>&nbsp;calories</p>
                                 </div>
                                 <div class="column calorie-count is-3-mobile p-0">
                                     <div class="field has-addons is-justify-content-center">
