@@ -52,6 +52,11 @@ export default defineNuxtConfig({
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Material+Icons&display=swap'
       },
+      {
+        rel: 'stylesheet',
+         href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'
+
+      },
       { rel: 'apple-touch-icon', sizes: '57x57', href: '/images/apple-icon-57x57.png' },
       { rel: 'apple-touch-icon', sizes: '60x60', href: '/images/apple-icon-60x60.png' },
       { rel: 'apple-touch-icon', sizes: '72x72', href: '/images/apple-icon-72x72.png' },

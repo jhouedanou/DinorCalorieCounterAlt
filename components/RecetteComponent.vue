@@ -29,7 +29,10 @@
                 </div>
             </div>
 
-            <div class="notification is-info">
+            <div v-if="showNotification" class="notification is-info">
+                <button class="delete" @click="closeNotification">
+                    <span class="material-icons">close</span>
+                </button>
                 <div class="scroll-container">
                     <p class="scroll-text">Faites défiler vers la droite pour voir tous les ingrédients.</p>
                 </div>
@@ -115,6 +118,11 @@ const searchQuery = ref('')
 const selectedCategory = ref('Tous')
 const isInputFocused = ref(false)
 
+const showNotification = ref(true)
+
+const closeNotification = () => {
+    showNotification.value = false
+}
 const suggestions = computed(() => {
     if (!searchQuery.value) return []
     return props.aliments
@@ -199,7 +207,11 @@ const handleSearch = (event) => {
 }
 
 onMounted(() => {
-    initializeIngredients()
+    initializeIngredients();
+
+    setTimeout(() => {
+        closeNotification()
+    }, 5000) // 10000 millisecondes = 10 secondes
 })
 
 props.aliments.forEach(aliment => {
