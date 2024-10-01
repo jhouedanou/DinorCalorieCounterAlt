@@ -424,8 +424,9 @@ body {
   }
 }
 .momo{
-  color:$primary ;
+  color:$primary !important;
 }
+
 @media screen and (max-width: 768px) {
   .fassa{
     width:100% !important;
@@ -616,4 +617,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.visuelproduct{
+  position:relative;
 }

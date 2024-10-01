@@ -882,9 +882,9 @@
     which "^3.0.1"
     ws "^8.18.0"
 
-"@nuxt/image@^1.7.0":
+"@nuxt/image@^1.8.0":
   version "1.8.0"
-  resolved "https://registry.npmjs.org/@nuxt/image/-/image-1.8.0.tgz"
+  resolved "https://registry.yarnpkg.com/@nuxt/image/-/image-1.8.0.tgz#e7270ca16841fd8a4da43d29bc08ad1bbc620c9a"
   integrity sha512-GBbORch+ZfWJ0KB8PaXABsPjaiEXB4B4plcpAUVNCdzKZi2qQ4beRnEXfAbtAWPUPefj3rgCG7b9AqAe51Qlzw==
   dependencies:
     "@nuxt/kit" "^3.13.0"

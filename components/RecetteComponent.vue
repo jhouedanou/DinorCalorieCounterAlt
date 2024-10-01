@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <div class="columns is-multiline jordn listedesrecettes">
             <div class="mado">
                 <div class="filter-buttons"
@@ -30,17 +30,58 @@
 
             <div v-for="aliment in filteredAliments" :key="aliment.nom" class="column is-12 pb-8 fassa">
                 <div class="leplate columns">
-                    <div class="leplate-image column is-3">
-                        <p class="subtitle is-6">Calories par portion : <span>{{ aliment.calories_totales
-                                }}</span></p>
-                        <figure class="image is-4by3">
-                            <img :src="aliment.image" :alt="aliment.nom">
-                        </figure>
+                    <div class="leplate-image column is-8">
+                        <div class="container">
+
+                            <div class="line-1 columns is-mobile">
+                                <div class="visuelproduct column is-4-mobile">
+                                    <!-- image et nombre de calories du plat -->
+                                    <p class="subtitle is-6"><span>{{ aliment.calories_totales
+                                            }}</span> cal</p>
+                                    <nuxt-img class="is-rounded" :src="aliment.image" :alt="aliment.nom" format="webp"
+                                        quality="80" :fallback="aliment.image.replace(/\.[^.]+$/, '.jpg')" />
+
+                                </div>
+                                <div class="nompdt column is-8-mobile">
+                                    <!-- nombdu plat -->
+                                    <h2 class="momo title">{{ aliment.nom }}</h2>
+                                </div>
+                            </div>
+                            <div class="line-2 columns is-mobile">
+
+                                <div class="column is-8-mobile">
+                                    <div v-if="aliment.ingredients && aliment.ingredients.length"
+                                        class="tags is-justify-content-start">
+                                        <div v-for="ingredient in aliment.ingredients" :key="ingredient.nom"
+                                            class="ingredient-item">
+                                            <label class="ingredient-label">
+                                                <input type="checkbox" v-model="ingredient.selected">
+                                                {{ ingredient.nom }} ({{ ingredient.calories }} cal)
+                                            </label>
+                                            <input v-if="ingredient.selected" type="number"
+                                                v-model="ingredient.portions" min="1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column calorie-count is-2-mobile">
+                                    <div class="field has-addons is-justify-content-center">
+                                        <div class="is-flex paabo">
+
+                                            <div class="totalclro">
+                                                <p class="mt-2">
+                                                    <span> {{ calculateTotalCalories(aliment) }}</span>calories
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="leplate-content">
+                    <div class="leplate-content column is-4">
                         <div class="lauei columns">
                             <div class="column is-9 is-flex is-align-items-end">
-                                <h2 class="momo title is-4">{{ aliment.nom }}</h2>
 
                             </div>
                             <div class="column is-3">
@@ -54,41 +95,14 @@
                             <div class="column is-9 is-12-mobile kanak">
                                 <!-- <p class="p-2">Sélectionnez les ingrédients du plat en cliquant sur les élements
                                     ci-dessous </p> -->
-                                <div v-if="aliment.ingredients && aliment.ingredients.length"
-                                    class="tags is-justify-content-start">
-                                    <div v-for="ingredient in aliment.ingredients" :key="ingredient.nom"
-                                        class="ingredient-item">
-                                        <label class="ingredient-label">
-                                            <input type="checkbox" v-model="ingredient.selected">
-                                            {{ ingredient.nom }} ({{ ingredient.calories }} cal)
-                                        </label>
-                                        <input v-if="ingredient.selected" type="number" v-model="ingredient.portions"
-                                            min="1">
-                                    </div>
-                                </div>
+
                                 <!-- <div class="mt-4">
                                     <p>Total des calories : {{ calculateTotalCalories(aliment) }} Kcal</p>
                                 </div> -->
                             </div>
 
                             <div class="column is-3">
-                                <div class="field has-addons is-justify-content-center">
-                                    <div class="is-flex paabo">
 
-                                        <div class="totalclro">
-                                            <p class="mt-2">Total des calories :
-                                                <!-- <span>{{
-                                                aliment.calories_totales * (aliment.portions || 1) -
-                                                aliment.ingredients.reduce((sum, ing) => !ing.selected ? sum +
-                                                    ing.calories : sum, 0)
-                                                    }}</span> -->
-                                                <span> {{ calculateTotalCalories(aliment) }}</span>
-
-                                                Kcal
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

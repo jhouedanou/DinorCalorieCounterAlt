@@ -2,9 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled:false },
+
   typescript: {
     strict: false
-  }, 
+  },
+
   // modules: [
   //   '@nuxtjs/pwa',
   //   // ... other modules
@@ -12,6 +14,7 @@ export default defineNuxtConfig({
   buildModules: [
     '@nuxtjs/pwa',
   ],
+
   pwa: {
     manifest: {
       name: 'DinorCalorieCounter',
@@ -28,10 +31,12 @@ export default defineNuxtConfig({
       fileName: 'app-icon.png',
     },
   },
+
   css: [
     '@/assets/styles/styles.scss',
     'bulma/css/bulma.min.css'
   ],
+
   head: {
     title:"DINOR APP - Calculateur de calories",  meta: [
       { charset: 'utf-8' },
@@ -67,5 +72,7 @@ export default defineNuxtConfig({
       { name: 'msapplication-TileImage', content: '/images/ms-icon-144x144.png' },
       { name: 'theme-color', content: '#ffffff' },
     ]
-  }
+  },
+
+  modules: ['@nuxt/image']
 })

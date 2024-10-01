@@ -1,0 +1,129 @@
+{
+    "calories_equivalences": [
+        {
+            "calories": 100,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 200,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 300,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 400,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 500,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 600,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 700,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 800,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 900,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 1000,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 1100,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 1200,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 1300,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 1400,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 1500,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 1600,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 1700,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 1800,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 1900,
+            "AJR_femme": "En dessous",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 2000,
+            "AJR_femme": "AJR Femme Atteint",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 2100,
+            "AJR_femme": "Au-dessus des AJR Femme",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 2200,
+            "AJR_femme": "Au-dessus des AJR Femme",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 2300,
+            "AJR_femme": "Au-dessus des AJR Femme",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 2400,
+            "AJR_femme": "Au-dessus des AJR Femme",
+            "AJR_homme": "En dessous"
+        },
+        {
+            "calories": 2500,
+            "AJR_femme": "Au-dessus des AJR Femme",
+            "AJR_homme": "AJR Homme Atteint"
+        }
+    ]
+}
