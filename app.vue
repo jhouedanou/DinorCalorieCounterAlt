@@ -50,7 +50,7 @@ const activeTab = ref('aliments')
 const showOverlay = ref(false)
 
 const isLargeScreen = computed(() => {
-  return window.innerWidth > 1024
+  return window.innerWidth > 768
 })
 
 onMounted(() => {

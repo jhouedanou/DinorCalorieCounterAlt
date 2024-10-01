@@ -2,12 +2,10 @@
     <div class="container">
         <div class="columns is-multiline jordn listedesrecettes">
             <div class="mado">
-                <div class="filter-buttons"
-                    :class="{ 'has-active': selectedCategory !== 'Tous', 'is-hidden': isInputFocused }">
-                    <button v-for="category in categories" :key="category" @click="filterCategory(category)"
-                        class="button" :class="{ 'is-active': selectedCategory === category }">
-                        {{ }}
-                        {{ category }}
+                <div class="filter-buttons">
+                    <button v-for="category in categories" :key="category.nom" @click="filterCategory(category.nom)"
+                        class="button" :class="{ 'is-active': selectedCategory === category.nom }">
+                        {{ category.icone }} {{ category.nom }}
                     </button>
                 </div>
                 <div class="cyvzp">
@@ -110,8 +108,8 @@ import { ref, computed, onMounted } from 'vue'
 const props = defineProps(['aliments'])
 
 const categories = computed(() => {
-    const uniqueCategories = [...new Set(props.aliments.map(aliment => aliment.categorie))]
-    return ['Tous', ...uniqueCategories]
+    const uniqueCategories = [...new Set(props.aliments.map(aliment => JSON.stringify(aliment.categorie)))]
+    return [{ nom: 'Tous', icone: '🍽️' }, ...uniqueCategories.map(cat => JSON.parse(cat))]
 })
 
 const searchQuery = ref('')
@@ -147,7 +145,7 @@ const selectSuggestion = (suggestion) => {
 const filteredAliments = computed(() => {
     let filtered = props.aliments
     if (selectedCategory.value !== 'Tous') {
-        filtered = filtered.filter(aliment => aliment.categorie === selectedCategory.value)
+        filtered = filtered.filter(aliment => aliment.categorie.nom === selectedCategory.value)
     }
     if (searchQuery.value) {
         const query = searchQuery.value.toLowerCase()
@@ -159,8 +157,9 @@ const filteredAliments = computed(() => {
     return filtered
 })
 
-const filterCategory = (category) => {
-    selectedCategory.value = category
+
+const filterCategory = (categoryName) => {
+    selectedCategory.value = categoryName
 }
 
 const toggleIngredient = (aliment, ingredient) => {
@@ -211,7 +210,7 @@ onMounted(() => {
 
     setTimeout(() => {
         closeNotification()
-    }, 5000) // 10000 millisecondes = 10 secondes
+    }, 10000) // 10000 millisecondes = 10 secondes
 })
 
 props.aliments.forEach(aliment => {

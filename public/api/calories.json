@@ -4,6 +4,10 @@
             "nom": "Pain Condiments",
             "image": "/images/08.webp",
             "icone": "🥪",
+            "categorie": {
+                "nom": "grill",
+                "icone": "🔥"
+            },
             "ingredients": [
                 {
                     "nom": "Demi-pain",
@@ -16,7 +20,7 @@
                     "icone": "🍖"
                 },
                 {
-                    "nom": "oeuf",
+                    "nom": "Oeuf",
                     "calories": 70,
                     "icone": "🥚"
                 },
@@ -31,14 +35,16 @@
                     "icone": "🛢️"
                 }
             ],
-            "categorie": "grill",
-            "iconecat": "🔥",
             "calories_totales": 400
         },
         {
             "nom": "Attiéké Poisson",
             "image": "/images/01.webp",
             "icone": "🐟",
+            "categorie": {
+                "nom": "grill",
+                "icone": "🔥"
+            },
             "ingredients": [
                 {
                     "nom": "Boule d'Attiéké",
@@ -66,13 +72,16 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "grill",
             "calories_totales": 400
         },
         {
             "nom": "Foutou Banane",
             "image": "/images/02.webp",
             "icone": "🍌",
+            "categorie": {
+                "nom": "local",
+                "icone": "🏡"
+            },
             "ingredients": [
                 {
                     "nom": "Banane plantain",
@@ -90,13 +99,16 @@
                     "icone": "🫒"
                 }
             ],
-            "categorie": "local",
             "calories_totales": 500
         },
         {
             "nom": "Kedjenou de Poulet",
             "image": "/images/03.webp",
             "icone": "🍗",
+            "categorie": {
+                "nom": "cuisine locale",
+                "icone": "🍲"
+            },
             "ingredients": [
                 {
                     "nom": "Poulet",
@@ -129,13 +141,16 @@
                     "icone": "🫚"
                 }
             ],
-            "categorie": "cuisine locale",
             "calories_totales": 340
         },
         {
             "nom": "Alloco",
             "image": "/images/04.webp",
             "icone": "🍟",
+            "categorie": {
+                "nom": "grill",
+                "icone": "🔥"
+            },
             "ingredients": [
                 {
                     "nom": "Banane plantain frite",
@@ -153,13 +168,16 @@
                     "icone": "🧅"
                 }
             ],
-            "categorie": "grill",
             "calories_totales": 420
         },
         {
             "nom": "Garba",
             "image": "/images/05.webp",
             "icone": "🍲",
+            "categorie": {
+                "nom": "grill",
+                "icone": "🔥"
+            },
             "ingredients": [
                 {
                     "nom": "Attiéké",
@@ -187,13 +205,16 @@
                     "icone": "🫒"
                 }
             ],
-            "categorie": "grill",
             "calories_totales": 405
         },
         {
             "nom": "Riz Sauce Arachide",
             "image": "/images/06.webp",
             "icone": "🍛",
+            "categorie": {
+                "nom": "traditionnel",
+                "icone": "🍲"
+            },
             "ingredients": [
                 {
                     "nom": "Riz blanc",
@@ -226,13 +247,16 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "traditionel",
             "calories_totales": 700
         },
         {
             "nom": "Soupe de Poisson",
             "image": "/images/07.webp",
             "icone": "🍲🐟",
+            "categorie": {
+                "nom": "sauces",
+                "icone": "🧂"
+            },
             "ingredients": [
                 {
                     "nom": "Poisson (capitaine)",
@@ -265,13 +289,16 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "grill",
             "calories_totales": 345
         },
         {
             "nom": "Placali Sauce Graine",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🍽️",
+            "categorie": {
+                "nom": "sauces",
+                "icone": "🧂"
+            },
             "ingredients": [
                 {
                     "nom": "Placali",
@@ -304,13 +331,16 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "grill",
             "calories_totales": 650
         },
         {
             "nom": "Tchep au Poulet",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🍗🍚",
+            "categorie": {
+                "nom": "grill",
+                "icone": "🔥"
+            },
             "ingredients": [
                 {
                     "nom": "Riz",
@@ -343,13 +373,16 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "grill",
             "calories_totales": 530
         },
         {
             "nom": "Poulet Braisé avec Attiéké",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🍗🍚",
+            "categorie": {
+                "nom": "grill",
+                "icone": "🔥"
+            },
             "ingredients": [
                 {
                     "nom": "Poulet braisé",
@@ -357,7 +390,7 @@
                     "icone": "🍗🔥"
                 },
                 {
-                    "nom": "Attiéké ",
+                    "nom": "Attiéké",
                     "calories": 150,
                     "icone": "🍚"
                 },
@@ -377,13 +410,16 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "grill",
             "calories_totales": 450
         },
         {
             "nom": "Riz Sauce Feuille (Sauce Tôh)",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🍛🌿",
+            "categorie": {
+                "nom": "sauces",
+                "icone": "🧂"
+            },
             "ingredients": [
                 {
                     "nom": "Riz blanc",
@@ -416,13 +452,16 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "grill",
             "calories_totales": 500
         },
         {
             "nom": "Kokodé",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🥘",
+            "categorie": {
+                "nom": "sauces",
+                "icone": "🧂"
+            },
             "ingredients": [
                 {
                     "nom": "Igname",
@@ -450,13 +489,16 @@
                     "icone": "🫒"
                 }
             ],
-            "categorie": "grill",
             "calories_totales": 325
         },
         {
             "nom": "N'voufou",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🍲🍌",
+            "categorie": {
+                "nom": "cuisine locale",
+                "icone": "🍲"
+            },
             "ingredients": [
                 {
                     "nom": "Banane plantain",
@@ -484,13 +526,16 @@
                     "icone": "🧅"
                 }
             ],
-            "categorie": "cuisine locale",
             "calories_totales": 595
         },
         {
             "nom": "Sauce Djoumblé",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🍛🌰",
+            "categorie": {
+                "nom": "cuisine locale",
+                "icone": "🍲"
+            },
             "ingredients": [
                 {
                     "nom": "Viande de bœuf",
@@ -518,13 +563,16 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "cuisine locale",
             "calories_totales": 500
         },
         {
             "nom": "Kékérenou",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🍲🐔",
+            "categorie": {
+                "nom": "cuisine locale",
+                "icone": "🍲"
+            },
             "ingredients": [
                 {
                     "nom": "Igname",
@@ -552,13 +600,16 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "cuisine locale",
             "calories_totales": 625
         },
         {
             "nom": "Soupe Kabato",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🍲",
+            "categorie": {
+                "nom": "sauces",
+                "icone": "🧂"
+            },
             "ingredients": [
                 {
                     "nom": "Riz",
@@ -586,13 +637,16 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "sauces",
             "calories_totales": 400
         },
         {
             "nom": "Akpessi",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🥚🍲",
+            "categorie": {
+                "nom": "sauces",
+                "icone": "🧂"
+            },
             "ingredients": [
                 {
                     "nom": "Igname",
@@ -620,13 +674,16 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "sauces",
             "calories_totales": 345
         },
         {
             "nom": "Djenkoumé",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🍛🌽",
+            "categorie": {
+                "nom": "cuisine locale",
+                "icone": "🍲"
+            },
             "ingredients": [
                 {
                     "nom": "Semoule de maïs",
@@ -654,13 +711,16 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "cuisine locale",
             "calories_totales": 350
         },
         {
             "nom": "Riz Cantonais",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🍚🍗🥕🥚",
+            "categorie": {
+                "nom": "asiatique",
+                "icone": "🍜"
+            },
             "ingredients": [
                 {
                     "nom": "Riz",
@@ -688,13 +748,16 @@
                     "icone": "🧅"
                 }
             ],
-            "categorie": "asiatique",
             "calories_totales": 570
         },
         {
             "nom": "Gnammankoudji",
             "image": "https://dummyimage.com/600x400/000/fff",
             "icone": "🍆🐟🍚",
+            "categorie": {
+                "nom": "sauces",
+                "icone": "🧂"
+            },
             "ingredients": [
                 {
                     "nom": "Aubergines",
@@ -722,8 +785,167 @@
                     "icone": "🌶️"
                 }
             ],
-            "categorie": "boissons",
             "calories_totales": 400
+        },
+        {
+            "nom": "Brochettes de Bœuf",
+            "image": "/images/09.webp",
+            "icone": "🥩🥓",
+            "categorie": {
+                "nom": "grill",
+                "icone": "🔥"
+            },
+            "ingredients": [
+                {
+                    "nom": "Bœuf en cubes",
+                    "calories": 200,
+                    "icone": "🥩"
+                },
+                {
+                    "nom": "Poivrons",
+                    "calories": 30,
+                    "icone": "🌶️"
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20,
+                    "icone": "🧅"
+                },
+                {
+                    "nom": "Marinade (huile, épices)",
+                    "calories": 50,
+                    "icone": "🫒"
+                }
+            ],
+            "calories_totales": 300
+        },
+        {
+            "nom": "Yassa Poulet",
+            "image": "/images/10.webp",
+            "icone": "🍗🍋",
+            "categorie": {
+                "nom": "sauces",
+                "icone": "🧂"
+            },
+            "ingredients": [
+                {
+                    "nom": "Poulet",
+                    "calories": 250,
+                    "icone": "🍗"
+                },
+                {
+                    "nom": "Citron",
+                    "calories": 20,
+                    "icone": "🍋"
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20,
+                    "icone": "🧅"
+                },
+                {
+                    "nom": "Moutarde",
+                    "calories": 10,
+                    "icone": "🌭"
+                },
+                {
+                    "nom": "Huile",
+                    "calories": 50,
+                    "icone": "🫒"
+                }
+            ],
+            "calories_totales": 350
+        },
+        {
+            "nom": "Frites de Manioc",
+            "image": "/images/11.webp",
+            "icone": "🍠🍟",
+            "categorie": {
+                "nom": "grill",
+                "icone": "🔥"
+            },
+            "ingredients": [
+                {
+                    "nom": "Manioc",
+                    "calories": 150,
+                    "icone": "🍠"
+                },
+                {
+                    "nom": "Huile",
+                    "calories": 100,
+                    "icone": "🫒"
+                },
+                {
+                    "nom": "Sel",
+                    "calories": 0,
+                    "icone": "🧂"
+                }
+            ],
+            "calories_totales": 250
+        },
+        {
+            "nom": "Bananes Frites",
+            "image": "/images/12.webp",
+            "icone": "🍌🍟",
+            "categorie": {
+                "nom": "grill",
+                "icone": "🔥"
+            },
+            "ingredients": [
+                {
+                    "nom": "Banane plantain",
+                    "calories": 200,
+                    "icone": "🍌"
+                },
+                {
+                    "nom": "Huile",
+                    "calories": 100,
+                    "icone": "🫒"
+                },
+                {
+                    "nom": "Sel",
+                    "calories": 0,
+                    "icone": "🧂"
+                }
+            ],
+            "calories_totales": 300
+        },
+        {
+            "nom": "Salade Kati",
+            "image": "/images/13.webp",
+            "icone": "🥗",
+            "categorie": {
+                "nom": "local",
+                "icone": "🏡"
+            },
+            "ingredients": [
+                {
+                    "nom": "Laitue",
+                    "calories": 10,
+                    "icone": "🥬"
+                },
+                {
+                    "nom": "Tomates",
+                    "calories": 25,
+                    "icone": "🍅"
+                },
+                {
+                    "nom": "Concombres",
+                    "calories": 15,
+                    "icone": "🥒"
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20,
+                    "icone": "🧅"
+                },
+                {
+                    "nom": "Vinaigrette",
+                    "calories": 50,
+                    "icone": "🧂"
+                }
+            ],
+            "calories_totales": 120
         }
     ]
 }
