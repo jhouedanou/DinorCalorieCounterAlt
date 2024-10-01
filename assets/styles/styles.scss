@@ -792,3 +792,26 @@ max-width: 100px;
 .yeleen{
   max-width: 768px !important;
 }
+.app-content {
+  transition: filter 0.3s ease;
+}
+
+.overlay-active .app-content {
+  filter: blur(5px);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
