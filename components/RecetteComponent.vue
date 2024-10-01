@@ -32,7 +32,9 @@
                     <span class="material-icons">close</span>
                 </button>
                 <div class="scroll-container">
-                    <p class="scroll-text">Faites défiler vers la droite pour voir tous les ingrédients.</p>
+                    <p class="scroll-text">Faites défiler vers la droite pour voir tous les ingrédients.<br>Cliquez sur
+                        un
+                        des aliments pour sélectionner un nombre de portions</p>
                 </div>
             </div>
             <div v-for="aliment in filteredAliments" :key="aliment.nom" class="column is-12 pb-8 fassa">
@@ -53,8 +55,8 @@
                                     <!-- nombdu plat -->
                                     <h2 class="momo title">{{ aliment.nom }}</h2>
                                     <!-- nombre de calories -->
-                                    <p><span>{{ aliment.calories_totales
-                                            }}</span> cal</p>
+                                    <p class="wilfried"><span>{{ aliment.calories_totales
+                                            }}</span> calories</p>
                                 </div>
                                 <div class="column calorie-count is-3-mobile p-0">
                                     <div class="field has-addons is-justify-content-center">
@@ -217,7 +219,7 @@ onMounted(() => {
 
     setTimeout(() => {
         closeNotification()
-    }, 10000) // 10000 millisecondes = 10 secondes
+    }, 30000) // 10000 millisecondes = 10 secondes
 })
 
 props.aliments.forEach(aliment => {
