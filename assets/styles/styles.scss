@@ -710,7 +710,7 @@ body {
   margin-right: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .line-2{
     padding-top: 1em;
   }
@@ -788,4 +788,7 @@ max-width: 100px;
 
 .emoji-icon {
   margin-right: 5px;
+}
+.yeleen{
+  max-width: 768px !important;
 }
