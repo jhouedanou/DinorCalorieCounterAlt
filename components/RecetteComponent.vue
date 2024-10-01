@@ -34,25 +34,24 @@
                         <div class="container">
 
                             <div class="line-1 columns is-mobile">
-                                <div class="visuelproduct column is-4-mobile">
-                                    <!-- image et nombre de calories du plat -->
-                                    <p class="subtitle is-6"><span>{{ aliment.calories_totales
-                                            }}</span> cal</p>
+                                <div class="visuelproduct column is-3-mobile">
+                                    <!-- visuel du plat -->
                                     <nuxt-img class="is-rounded" :src="aliment.image" :alt="aliment.nom" format="webp"
                                         quality="80" :fallback="aliment.image.replace(/\.[^.]+$/, '.jpg')" />
-
                                 </div>
-                                <div class="nompdt column is-6-mobile">
+                                <div
+                                    class="nompdt column is-6-mobile p-0 is-flex is-align-items-start is-flex-direction-column is-justify-content-center">
                                     <!-- nombdu plat -->
                                     <h2 class="momo title">{{ aliment.nom }}</h2>
+                                    <!-- nombre de calories -->
+                                    <p><span>{{ aliment.calories_totales
+                                            }}</span> cal</p>
                                 </div>
-
-                                <div class="column calorie-count is-2-mobile">
+                                <div class="column calorie-count is-3-mobile p-0">
                                     <div class="field has-addons is-justify-content-center">
-                                        <div class="is-flex paabo">
-
+                                        <div class="is-flex paabo p-0">
                                             <div class="totalclro">
-                                                <p class="mt-2">
+                                                <p class="mt-2 is-flex is-align-items-center">
                                                     <span> {{ calculateTotalCalories(aliment) }}</span>calories
                                                 </p>
                                             </div>
