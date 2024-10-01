@@ -58,8 +58,15 @@
                                 </div>
                                 <div class="column calorie-count is-3-mobile p-0">
                                     <div class="field has-addons is-justify-content-center">
-                                        <div class="is-flex paabo p-0">
-                                            <div class="totalclro">
+                                        <div class="is-flex paabo p-0" title="Seuils caloriques :
+     Vert : 1200-1500 calories
+     Orange : 1501-2200 calories
+     Rouge : Plus de 2200 calories">
+                                            <div class="totalclro" :class="{
+                                                'vert': calculateTotalCalories(aliment) >= 12000 && calculateTotalCalories(aliment) <= 1500,
+                                                'orange': calculateTotalCalories(aliment) > 1500 && calculateTotalCalories(aliment) <= 2200,
+                                                'rouge': calculateTotalCalories(aliment) > 2200
+                                            }">
                                                 <p class="mt-2 is-flex is-align-items-center">
                                                     <span> {{ calculateTotalCalories(aliment) }}</span>calories
                                                 </p>

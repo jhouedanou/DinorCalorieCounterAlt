@@ -1,0 +1,104 @@
+{
+    "calories_equivalences": [
+        {
+            "calories": 100,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 200,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 300,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 400,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 500,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 600,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 700,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 800,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 900,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 1000,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 1100,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 1200,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 1300,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 1400,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 1500,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 1600,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 1700,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 1800,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 1900,
+            "AJR": "En dessous"
+        },
+        {
+            "calories": 2000,
+            "AJR": "AJR Femme Atteint"
+        },
+        {
+            "calories": 2100,
+            "AJR": "Au-dessus des AJR Femme"
+        },
+        {
+            "calories": 2200,
+            "AJR": "Au-dessus des AJR Femme"
+        },
+        {
+            "calories": 2300,
+            "AJR": "Au-dessus des AJR Femme"
+        },
+        {
+            "calories": 2400,
+            "AJR": "Au-dessus des AJR Femme"
+        },
+        {
+            "calories": 2500,
+            "AJR": "AJR Homme Atteint"
+        }
+    ]
+}
