@@ -559,7 +559,12 @@ body {
   margin-bottom: 1rem;
 }
 .ingredient-item{
-
+  width: 100% !important;
+  background: #EEE;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border: 0.005em #bebebe solid;
   width: 100% !important;
   input[type="number"]
     {

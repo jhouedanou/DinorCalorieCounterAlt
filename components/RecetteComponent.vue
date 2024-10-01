@@ -42,9 +42,22 @@
                                         quality="80" :fallback="aliment.image.replace(/\.[^.]+$/, '.jpg')" />
 
                                 </div>
-                                <div class="nompdt column is-8-mobile">
+                                <div class="nompdt column is-6-mobile">
                                     <!-- nombdu plat -->
                                     <h2 class="momo title">{{ aliment.nom }}</h2>
+                                </div>
+
+                                <div class="column calorie-count is-2-mobile">
+                                    <div class="field has-addons is-justify-content-center">
+                                        <div class="is-flex paabo">
+
+                                            <div class="totalclro">
+                                                <p class="mt-2">
+                                                    <span> {{ calculateTotalCalories(aliment) }}</span>calories
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="line-2 columns is-mobile">
@@ -60,18 +73,6 @@
                                             </label>
                                             <input v-if="ingredient.selected" type="number"
                                                 v-model="ingredient.portions" min="1">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column calorie-count is-2-mobile">
-                                    <div class="field has-addons is-justify-content-center">
-                                        <div class="is-flex paabo">
-
-                                            <div class="totalclro">
-                                                <p class="mt-2">
-                                                    <span> {{ calculateTotalCalories(aliment) }}</span>calories
-                                                </p>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -174,7 +175,9 @@ const initializeIngredients = () => {
     props.aliments.forEach(aliment => {
         if (aliment.ingredients) {
             aliment.ingredients.forEach(ingredient => {
-                ingredient.selected = false
+                ingredient.selected = false;
+                ingredient.portions = 1; // Définir la valeur par défaut à 1
+
             })
         }
     })
