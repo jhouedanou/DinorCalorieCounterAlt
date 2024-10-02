@@ -1247,6 +1247,331 @@
                 }
             ],
             "calories_totales": 375
+        },
+        {
+            "nom": "Hamburger classique",
+            "image": "/images/fastfood/1.png",
+            "icone": "🍔",
+            "categorie": {
+                "nom": "fast food",
+                "icone": "🍔"
+            },
+            "ingredients": [
+                {
+                    "nom": "Pain à hamburger",
+                    "calories": 150,
+                    "icone": "🍞"
+                },
+                {
+                    "nom": "Viande de boeuf",
+                    "calories": 250,
+                    "icone": "🥩"
+                },
+                {
+                    "nom": "Fromage",
+                    "calories": 100,
+                    "icone": "🧀"
+                },
+                {
+                    "nom": "Salade",
+                    "calories": 5,
+                    "icone": "🥬"
+                },
+                {
+                    "nom": "Tomates",
+                    "calories": 10,
+                    "icone": "🍅"
+                },
+                {
+                    "nom": "Sauce",
+                    "calories": 50,
+                    "icone": "🥫"
+                }
+            ],
+            "calories_totales": 565
+        },
+        {
+            "nom": "Pizza Margherita",
+            "image": "/images/fastfood/2.png",
+            "icone": "🍕",
+            "categorie": {
+                "nom": "fast food",
+                "icone": "🍕"
+            },
+            "ingredients": [
+                {
+                    "nom": "Pâte à pizza",
+                    "calories": 200,
+                    "icone": "🍞"
+                },
+                {
+                    "nom": "Fromage mozzarella",
+                    "calories": 200,
+                    "icone": "🧀"
+                },
+                {
+                    "nom": "Sauce tomate",
+                    "calories": 50,
+                    "icone": "🍅"
+                },
+                {
+                    "nom": "Basilic",
+                    "calories": 5,
+                    "icone": "🌿"
+                }
+            ],
+            "calories_totales": 455
+        },
+        {
+            "nom": "Tacos au poulet",
+            "image": "/images/fastfood/3.png",
+            "icone": "🌮",
+            "categorie": {
+                "nom": "fast food",
+                "icone": "🌮"
+            },
+            "ingredients": [
+                {
+                    "nom": "Tortilla",
+                    "calories": 150,
+                    "icone": "🌯"
+                },
+                {
+                    "nom": "Poulet grillé",
+                    "calories": 200,
+                    "icone": "🍗"
+                },
+                {
+                    "nom": "Fromage",
+                    "calories": 100,
+                    "icone": "🧀"
+                },
+                {
+                    "nom": "Laitue",
+                    "calories": 5,
+                    "icone": "🥬"
+                },
+                {
+                    "nom": "Sauce piquante",
+                    "calories": 50,
+                    "icone": "🌶️"
+                }
+            ],
+            "calories_totales": 505
+        },
+        {
+            "nom": "Frites",
+            "image": "/images/fastfood/4.png",
+            "icone": "🍟",
+            "categorie": {
+                "nom": "fast food",
+                "icone": "🍟"
+            },
+            "ingredients": [
+                {
+                    "nom": "Pommes de terre",
+                    "calories": 300,
+                    "icone": "🥔"
+                },
+                {
+                    "nom": "Huile de friture",
+                    "calories": 200,
+                    "icone": "🫒"
+                }
+            ],
+            "calories_totales": 500
+        },
+        {
+            "nom": "Hot dog",
+            "image": "/images/fastfood/5.png",
+            "icone": "🌭",
+            "categorie": {
+                "nom": "fast food",
+                "icone": "🌭"
+            },
+            "ingredients": [
+                {
+                    "nom": "Pain à hot dog",
+                    "calories": 150,
+                    "icone": "🍞"
+                },
+                {
+                    "nom": "Saucisse",
+                    "calories": 250,
+                    "icone": "🌭"
+                },
+                {
+                    "nom": "Sauce",
+                    "calories": 50,
+                    "icone": "🥫"
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20,
+                    "icone": "🧅"
+                }
+            ],
+            "calories_totales": 470
+        },
+        {
+            "nom": "Sandwich au thon",
+            "image": "/images/fastfood/6.png",
+            "icone": "🥪",
+            "categorie": {
+                "nom": "fast food",
+                "icone": "🥪"
+            },
+            "ingredients": [
+                {
+                    "nom": "Pain de mie",
+                    "calories": 150,
+                    "icone": "🍞"
+                },
+                {
+                    "nom": "Thon",
+                    "calories": 100,
+                    "icone": "🐟"
+                },
+                {
+                    "nom": "Mayonnaise",
+                    "calories": 90,
+                    "icone": "🥫"
+                },
+                {
+                    "nom": "Salade",
+                    "calories": 5,
+                    "icone": "🥬"
+                }
+            ],
+            "calories_totales": 345
+        },
+        {
+            "nom": "Wrap au poulet",
+            "image": "/images/fastfood/7.png",
+            "icone": "🌯",
+            "categorie": {
+                "nom": "fast food",
+                "icone": "🌯"
+            },
+            "ingredients": [
+                {
+                    "nom": "Tortilla",
+                    "calories": 150,
+                    "icone": "🌯"
+                },
+                {
+                    "nom": "Poulet",
+                    "calories": 200,
+                    "icone": "🍗"
+                },
+                {
+                    "nom": "Sauce ranch",
+                    "calories": 80,
+                    "icone": "🥫"
+                },
+                {
+                    "nom": "Laitue",
+                    "calories": 5,
+                    "icone": "🥬"
+                }
+            ],
+            "calories_totales": 435
+        },
+        {
+            "nom": "Salade César au poulet",
+            "image": "/images/fastfood/8.png",
+            "icone": "🥗",
+            "categorie": {
+                "nom": "fast food",
+                "icone": "🥗"
+            },
+            "ingredients": [
+                {
+                    "nom": "Laitue romaine",
+                    "calories": 10,
+                    "icone": "🥬"
+                },
+                {
+                    "nom": "Poulet grillé",
+                    "calories": 150,
+                    "icone": "🍗"
+                },
+                {
+                    "nom": "Parmesan",
+                    "calories": 100,
+                    "icone": "🧀"
+                },
+                {
+                    "nom": "Croutons",
+                    "calories": 150,
+                    "icone": "🍞"
+                },
+                {
+                    "nom": "Sauce César",
+                    "calories": 150,
+                    "icone": "🥫"
+                }
+            ],
+            "calories_totales": 560
+        },
+        {
+            "nom": "Nuggets de poulet",
+            "image": "/images/fastfood/9.png",
+            "icone": "🍗",
+            "categorie": {
+                "nom": "fast food",
+                "icone": "🍗"
+            },
+            "ingredients": [
+                {
+                    "nom": "Poulet frit",
+                    "calories": 300,
+                    "icone": "🍗"
+                },
+                {
+                    "nom": "Sauce barbecue",
+                    "calories": 50,
+                    "icone": "🥫"
+                }
+            ],
+            "calories_totales": 350
+        },
+        {
+            "nom": "Cheeseburger",
+            "image": "/images/fastfood/10.png",
+            "icone": "🍔",
+            "categorie": {
+                "nom": "fast food",
+                "icone": "🍔"
+            },
+            "ingredients": [
+                {
+                    "nom": "Pain à hamburger",
+                    "calories": 150,
+                    "icone": "🍞"
+                },
+                {
+                    "nom": "Viande de boeuf",
+                    "calories": 250,
+                    "icone": "🥩"
+                },
+                {
+                    "nom": "Fromage cheddar",
+                    "calories": 100,
+                    "icone": "🧀"
+                },
+                {
+                    "nom": "Cornichons",
+                    "calories": 5,
+                    "icone": "🥒"
+                },
+                {
+                    "nom": "Ketchup",
+                    "calories": 20,
+                    "icone": "🍅"
+                }
+            ],
+            "calories_totales": 525
         }
     ]
 }
