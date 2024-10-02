@@ -48,7 +48,7 @@
                                 <div class="visuelproduct column is-3-mobile">
                                     <!-- visuel du plat -->
                                     <nuxt-img class="is-rounded" :src="aliment.image" :alt="aliment.nom" format="webp"
-                                        quality="80" :fallback="aliment.image.replace(/\.[^.]+$/, '.jpg')" />
+                                        quality="70" :fallback="aliment.image.replace(/\.[^.]+$/, '.jpg')" />
                                 </div>
                                 <div
                                     class="nompdt column is-6-mobile p-0 is-flex is-align-items-start is-flex-direction-column is-justify-content-center">

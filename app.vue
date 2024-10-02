@@ -10,17 +10,19 @@
         </div>
         <div class="tabs is-centered is-boxed is-toggle">
           <ul class="tabs-list">
-            <li :class="{ 'is-active': activeTab === 'aliments' }" class="tab-item">
+            <li class="tab-item" :class="{ 'is-active': activeTab === 'aliments' }">
               <a @click="activeTab = 'aliments'">Aliments populaires</a>
             </li>
-            <li :class="{ 'is-active': activeTab === 'restaurants' }" class="tab-item">
-              <a @click="activeTab = 'restaurants'">Restaurants populaires</a>
+            <li class="tab-item" :class="{ 'is-active': activeTab === 'calculateur' }">
+              <a @click="activeTab = 'calculateur'">Calculateur de calories</a>
             </li>
+            <div class="slider" :style="sliderStyle"></div>
           </ul>
+
         </div>
 
         <RecetteComponent v-if="activeTab === 'aliments'" :aliments="aliments" />
-        <RestaurantComponent v-if="activeTab === 'restaurants'" :restaurants="restaurants" />
+        <CalculateurCalories v-if="activeTab === 'calculateur'" />
       </div>
     </div>
     <div v-if="showOverlay" class="overlay">
@@ -52,7 +54,12 @@ const searchTermRecettes = ref('')
 const searchTermRestaurants = ref('')
 const aliments = ref([])
 const activeTab = ref('aliments')
-
+const sliderStyle = computed(() => {
+  const index = activeTab.value === 'aliments' ? 0 : 1
+  return {
+    transform: `translateX(${index * 100}%)`
+  }
+})
 const showSplash = ref(true);
 
 onMounted(() => {

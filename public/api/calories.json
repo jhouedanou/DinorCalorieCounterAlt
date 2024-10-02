@@ -2,7 +2,7 @@
     "aliments": [
         {
             "nom": "Pain Condiments",
-            "image": "/images/08.webp",
+            "image": "/images/01.png",
             "icone": "🥪",
             "categorie": {
                 "nom": "grill",
@@ -39,7 +39,7 @@
         },
         {
             "nom": "Attiéké Poisson",
-            "image": "/images/01.webp",
+            "image": "/images/02.png",
             "icone": "🐟",
             "categorie": {
                 "nom": "grill",
@@ -76,7 +76,7 @@
         },
         {
             "nom": "Foutou Banane",
-            "image": "/images/02.webp",
+            "image": "/images/03.png",
             "icone": "🍌",
             "categorie": {
                 "nom": "local",
@@ -103,7 +103,7 @@
         },
         {
             "nom": "Kedjenou de Poulet",
-            "image": "/images/03.webp",
+            "image": "/images/04.png",
             "icone": "🍗",
             "categorie": {
                 "nom": "cuisine locale",
@@ -145,7 +145,7 @@
         },
         {
             "nom": "Alloco",
-            "image": "/images/04.webp",
+            "image": "/images/05.png",
             "icone": "🍟",
             "categorie": {
                 "nom": "grill",
@@ -172,7 +172,7 @@
         },
         {
             "nom": "Garba",
-            "image": "/images/05.webp",
+            "image": "/images/06.png",
             "icone": "🍲",
             "categorie": {
                 "nom": "grill",
@@ -209,7 +209,7 @@
         },
         {
             "nom": "Riz Sauce Arachide",
-            "image": "/images/06.webp",
+            "image": "/images/07.png",
             "icone": "🍛",
             "categorie": {
                 "nom": "traditionnel",
@@ -251,7 +251,7 @@
         },
         {
             "nom": "Soupe de Poisson",
-            "image": "/images/07.webp",
+            "image": "/images/08.png",
             "icone": "🍲🐟",
             "categorie": {
                 "nom": "sauces",
@@ -293,7 +293,7 @@
         },
         {
             "nom": "Placali Sauce Graine",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/09.png",
             "icone": "🍽️",
             "categorie": {
                 "nom": "sauces",
@@ -335,7 +335,7 @@
         },
         {
             "nom": "Tchep au Poulet",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/10.png",
             "icone": "🍗🍚",
             "categorie": {
                 "nom": "grill",
@@ -377,7 +377,7 @@
         },
         {
             "nom": "Poulet Braisé avec Attiéké",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/11.png",
             "icone": "🍗🍚",
             "categorie": {
                 "nom": "grill",
@@ -414,7 +414,7 @@
         },
         {
             "nom": "Riz Sauce Feuille (Sauce Tôh)",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/12.png",
             "icone": "🍛🌿",
             "categorie": {
                 "nom": "sauces",
@@ -456,7 +456,7 @@
         },
         {
             "nom": "Kokodé",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/13.png",
             "icone": "🥘",
             "categorie": {
                 "nom": "sauces",
@@ -493,7 +493,7 @@
         },
         {
             "nom": "N'voufou",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/14.png",
             "icone": "🍲🍌",
             "categorie": {
                 "nom": "cuisine locale",
@@ -530,7 +530,7 @@
         },
         {
             "nom": "Sauce Djoumblé",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/15.png",
             "icone": "🍛🌰",
             "categorie": {
                 "nom": "cuisine locale",
@@ -567,7 +567,7 @@
         },
         {
             "nom": "Kékérenou",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/16.png",
             "icone": "🍲🐔",
             "categorie": {
                 "nom": "cuisine locale",
@@ -604,7 +604,7 @@
         },
         {
             "nom": "Soupe Kabato",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/17.png",
             "icone": "🍲",
             "categorie": {
                 "nom": "sauces",
@@ -641,7 +641,7 @@
         },
         {
             "nom": "Akpessi",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/18.png",
             "icone": "🥚🍲",
             "categorie": {
                 "nom": "sauces",
@@ -678,7 +678,7 @@
         },
         {
             "nom": "Djenkoumé",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/19.png",
             "icone": "🍛🌽",
             "categorie": {
                 "nom": "cuisine locale",
@@ -715,7 +715,7 @@
         },
         {
             "nom": "Riz Cantonais",
-            "image": "https://dummyimage.com/600x400/000/fff",
+            "image": "/images/20.png",
             "icone": "🍚🍗🥕🥚",
             "categorie": {
                 "nom": "asiatique",
