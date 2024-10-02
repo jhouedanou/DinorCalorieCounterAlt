@@ -77,8 +77,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="line-2 columns is-mobile">
 
+                            <p>Cliquez sur l'un des ingrédients ci dessous</p>
+                            <div class="line-2 columns is-mobile">
                                 <div v-if="aliment.ingredients && aliment.ingredients.length" class="tags container">
 
                                     <div class="zingredients">
@@ -118,7 +119,8 @@ const props = defineProps(['aliments'])
 
 const categories = computed(() => {
     const uniqueCategories = [...new Set(props.aliments.map(aliment => JSON.stringify(aliment.categorie)))]
-    return [{ nom: 'Tous', icone: '🍽️' }, ...uniqueCategories.map(cat => JSON.parse(cat))]
+    const sortedCategories = uniqueCategories.map(cat => JSON.parse(cat)).sort((a, b) => a.nom.localeCompare(b.nom))
+    return [{ nom: 'Tous', icone: '🍽️' }, ...sortedCategories]
 })
 
 const searchQuery = ref('')
@@ -163,7 +165,7 @@ const filteredAliments = computed(() => {
             aliment.ingredients.some(ingredient => ingredient.nom.toLowerCase().includes(query))
         )
     }
-    return filtered
+    return filtered.sort((a, b) => a.nom.localeCompare(b.nom))
 })
 
 

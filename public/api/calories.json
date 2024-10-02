@@ -1572,6 +1572,124 @@
                 }
             ],
             "calories_totales": 525
+        },
+        {
+            "nom": "Omelette et Pain",
+            "image": "/images/breakfast/1.png",
+            "icone": "🍳🍞",
+            "categorie": {
+                "nom": "petit-déjeuner",
+                "icone": "☀️"
+            },
+            "ingredients": [
+                {
+                    "nom": "Oeufs",
+                    "calories": 150,
+                    "icone": "🥚"
+                },
+                {
+                    "nom": "Pain",
+                    "calories": 150,
+                    "icone": "🍞"
+                },
+                {
+                    "nom": "Tomates",
+                    "calories": 25,
+                    "icone": "🍅"
+                },
+                {
+                    "nom": "Oignons",
+                    "calories": 20,
+                    "icone": "🧅"
+                },
+                {
+                    "nom": "Huile",
+                    "calories": 50,
+                    "icone": "🫒"
+                }
+            ],
+            "calories_totales": 395
+        },
+        {
+            "nom": "Porridge d'Avoine",
+            "image": "/images/breakfast/2.png",
+            "icone": "🥣🌾",
+            "categorie": {
+                "nom": "petit-déjeuner",
+                "icone": "☀️"
+            },
+            "ingredients": [
+                {
+                    "nom": "Avoine",
+                    "calories": 150,
+                    "icone": "🌾"
+                },
+                {
+                    "nom": "Lait",
+                    "calories": 100,
+                    "icone": "🥛"
+                },
+                {
+                    "nom": "Miel",
+                    "calories": 50,
+                    "icone": "🍯"
+                },
+                {
+                    "nom": "Fruits rouges",
+                    "calories": 30,
+                    "icone": "🍓"
+                }
+            ],
+            "calories_totales": 330
+        },
+        {
+            "nom": "Croissant et Café",
+            "image": "/images/breakfast/3.png",
+            "icone": "🥐☕",
+            "categorie": {
+                "nom": "petit-déjeuner",
+                "icone": "☀️"
+            },
+            "ingredients": [
+                {
+                    "nom": "Croissant",
+                    "calories": 300,
+                    "icone": "🥐"
+                },
+                {
+                    "nom": "Café (sans sucre)",
+                    "calories": 5,
+                    "icone": "☕"
+                }
+            ],
+            "calories_totales": 305
+        },
+        {
+            "nom": "Pain Beurré et Jus d'Orange",
+            "image": "/images/breakfast/4.png",
+            "icone": "🍞🍊",
+            "categorie": {
+                "nom": "petit-déjeuner",
+                "icone": "☀️"
+            },
+            "ingredients": [
+                {
+                    "nom": "Pain grillé",
+                    "calories": 150,
+                    "icone": "🍞"
+                },
+                {
+                    "nom": "Beurre",
+                    "calories": 100,
+                    "icone": "🧈"
+                },
+                {
+                    "nom": "Jus d'orange",
+                    "calories": 110,
+                    "icone": "🍊"
+                }
+            ],
+            "calories_totales": 360
         }
     ]
 }

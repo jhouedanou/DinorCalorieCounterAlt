@@ -15,7 +15,7 @@
                 </div>
 
                 <div class="ingredients-grid columns is-mobile is-multiline">
-                    <div class="p-4 column is-4-mobile" v-for="ingredient in filteredIngredients" :key="ingredient.nom">
+                    <div class="p-2 column is-4-mobile" v-for="ingredient in filteredIngredients" :key="ingredient.nom">
                         <div class="ingredient-item">
                             <label class="ingredient-label">
                                 <input type="checkbox" v-model="ingredient.selected" class="emoji-checkbox">
@@ -24,7 +24,7 @@
                                 <p class="lerequin">{{ ingredient.calories }} cal</p>
                             </label>
                             <input v-if="ingredient.selected" v-model="portions[ingredient.nom]" type="number" min="1"
-                                placeholder="">
+                                placeholder="Nombre de portions" class="portions-input">
 
                         </div>
                     </div>

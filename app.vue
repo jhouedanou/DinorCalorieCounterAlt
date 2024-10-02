@@ -5,7 +5,7 @@
     <div class="container mt-0 pt-6">
       <div class="carz is-flex is-justify-content-space-between is-align-items-center">
         <img src="/images/logo.png" class="same" alt="">
-        <p>Calculateur de calories</p>
+        <br>
       </div>
       <div class="tabs is-centered is-boxed is-toggle">
         <ul class="tabs-list">
@@ -13,7 +13,7 @@
             <a @click="activeTab = 'aliments'">Aliments populaires</a>
           </li>
           <li class="tab-item" :class="{ 'is-active': activeTab === 'calculateur' }">
-            <a @click="activeTab = 'calculateur'">Mon plat n'est pas dans la liste</a>
+            <a @click="activeTab = 'calculateur'">Calculer les calories</a>
           </li>
           <div class="slider" :style="sliderStyle"></div>
         </ul>
@@ -26,12 +26,17 @@
 </template>
 
 <script setup>
+
+
+import { useHead } from '#app'
 import { ref, onMounted, computed } from 'vue'
 import { useRestaurants } from '@/composables/useRestaurants'
 import RecetteComponent from '@/components/RecetteComponent.vue'
 import CalculateurCalories from '@/components/CalculateurCalories.vue'
 import Splashpage from '@/components/Splashpage.vue';
-
+useHead({
+  title: 'Dinor App, Calculateur de calories'
+})
 const { restaurants } = useRestaurants()
 const searchTermRecettes = ref('')
 const searchTermRestaurants = ref('')
@@ -60,8 +65,7 @@ onMounted(async () => {
 
 <style>
 body {
-  /* max-width: 430px !important;
-  margin: 0 auto; */
+  min-height: 100vh;
 }
 
 .tabs-list {
