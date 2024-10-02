@@ -55,6 +55,7 @@ export default {
         const portions = ref({})
         const totalCalories = ref(0)
         const searchTerm = ref('')
+        const isLoading = ref(true)
 
         const filteredIngredients = computed(() => {
             const filtered = ingredients.value.filter(ingredient =>
@@ -92,6 +93,7 @@ export default {
                 const allIngredients = data.aliments.flatMap(aliment => aliment.ingredients)
                 const uniqueIngredients = Array.from(new Set(allIngredients.map(JSON.stringify))).map(JSON.parse)
                 ingredients.value = uniqueIngredients
+
             })
 
         return {

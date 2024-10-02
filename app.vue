@@ -60,6 +60,7 @@ onMounted(async () => {
   const response = await fetch('/api/calories.json')
   const data = await response.json()
   aliments.value = data.aliments
+
 })
 </script>
 
