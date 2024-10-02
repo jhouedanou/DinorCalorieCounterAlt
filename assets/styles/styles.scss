@@ -364,14 +364,24 @@ body {
   }
 }
 .tabs.is-toggle li{
+  &:hover{
+    background-color: #5d5a5a00 !important;
+border:none !important;
+    a{
+    background-color: #5d5a5a00 !important;
+    border:none !important;
+
+}
+  }
   a{
     color:white !important;
     font-weight: bold;
-    
+    display: flex;align-items:center;justify-content: center;flex-direction: column;
+    text-align: center;
   }
   &.is-active a{
-  background:white !important;
-  color:$primary !important;
+  background:rgba(255, 255, 255, 0) !important;
+  color:$secondary !important;
   border:none;
 }}
 
@@ -784,13 +794,16 @@ margin-bottom: 1em;
 .zagba{
 font-weight: 800;
 font-size: 15px;
-
+line-height: 1.2;
 word-wrap: break-word;
 overflow-wrap: break-word;
 white-space: normal;
-max-width: 100px;
+max-width: 100px;  margin-bottom: 0.75rem;
+
 }
 .lerequin {
+  font-size: 15px;
+  line-height: 1.2;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
@@ -971,8 +984,13 @@ max-width: 100px;
   left: 0;
   height: 100%;
   width: 50%;
-  background-color: $primary;
+  background-color: #00000086;
   transition: transform 0.3s ease;
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
 }
 .squidgame{
   // min-height:80vh;
@@ -1096,4 +1114,87 @@ max-width: 100px;
   -moz-border-radius:5px ;
   -ms-border-radius:5px ;
   -o-border-radius:5px ;
+}
+.crofixed{
+  position:fixed;
+  bottom:0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin:0 auto;
+  left:0;
+  right:0;
+}
+
+.squidgame{
+  .ingredient-item{
+    min-height:192px;
+  }
+.zagba{
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100px;
+  margin:0 auto;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  }
+  .lerequin {
+    font-size: 15px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    margin:0 auto;
+    text-align: center;
+  }
+  
+}
+.notification.is-info{
+  margin:0 auto;
+}
+.total-calories {
+  max-width: 380px;
+text-align: center;
+display: flex;align-items:center;justify-content: center;flex-direction: row;
+margin:1em auto;
+  color: #666;
+  font-size: 18px !important;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+  width: 100%;
+  font-weight: bold;
+  &.vert{
+    span{
+      color:green !important;
+
+    }
+
+  }
+
+  &.orange{
+    span{
+      color:$primary !important;
+
+    }
+
+  }
+  &.rouge{
+    span{
+      color:$primary !important;
+
+    }
+  }
+}
+
+.container{
+  max-width: 95vw;
 }
