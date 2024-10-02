@@ -14,7 +14,7 @@
               <a @click="activeTab = 'aliments'">Aliments populaires</a>
             </li>
             <li class="tab-item" :class="{ 'is-active': activeTab === 'calculateur' }">
-              <a @click="activeTab = 'calculateur'">Calculateur de calories</a>
+              <a @click="activeTab = 'calculateur'">Mon plat n'est pas dans la liste</a>
             </li>
             <div class="slider" :style="sliderStyle"></div>
           </ul>
