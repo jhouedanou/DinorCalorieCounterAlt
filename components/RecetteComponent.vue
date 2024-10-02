@@ -27,9 +27,9 @@
                 </div>
             </div>
 
-            <div v-if="showNotification" class="notification is-info">
+            <div v-if="showNotification" class="notification is-warning">
                 <button class="delete" @click="closeNotification">
-                    <span class="material-icons">close</span>
+                    <!-- <span class="material-icons">close</span> -->
                 </button>
                 <div class="scroll-container">
                     <p class="scroll-text">Faites défiler vers la droite pour voir tous les ingrédients.<br>Cliquez sur

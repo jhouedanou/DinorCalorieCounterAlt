@@ -5,8 +5,8 @@
             "image": "/images/01.png",
             "icone": "🥪",
             "categorie": {
-                "nom": "grill",
-                "icone": "🔥"
+                "nom": "street food",
+                "icone": "🥪"
             },
             "ingredients": [
                 {
@@ -148,7 +148,7 @@
             "image": "/images/05.png",
             "icone": "🍟",
             "categorie": {
-                "nom": "grill",
+                "nom": "frit",
                 "icone": "🔥"
             },
             "ingredients": [
@@ -175,8 +175,8 @@
             "image": "/images/06.png",
             "icone": "🍲",
             "categorie": {
-                "nom": "grill",
-                "icone": "🔥"
+                "nom": "street food",
+                "icone": "🥪"
             },
             "ingredients": [
                 {
@@ -254,8 +254,8 @@
             "image": "/images/08.png",
             "icone": "🍲🐟",
             "categorie": {
-                "nom": "sauces",
-                "icone": "🧂"
+                "nom": "cuisine locale",
+                "icone": "🍲"
             },
             "ingredients": [
                 {
@@ -338,8 +338,8 @@
             "image": "/images/10.png",
             "icone": "🍗🍚",
             "categorie": {
-                "nom": "grill",
-                "icone": "🔥"
+                "nom": "cuisine locale",
+                "icone": "🍲"
             },
             "ingredients": [
                 {
@@ -459,8 +459,8 @@
             "image": "/images/13.png",
             "icone": "🥘",
             "categorie": {
-                "nom": "sauces",
-                "icone": "🧂"
+                "nom": "cuisine locale",
+                "icone": "🍲"
             },
             "ingredients": [
                 {
@@ -644,8 +644,8 @@
             "image": "/images/18.png",
             "icone": "🥚🍲",
             "categorie": {
-                "nom": "sauces",
-                "icone": "🧂"
+                "nom": "cuisine locale",
+                "icone": "🍲"
             },
             "ingredients": [
                 {
@@ -972,7 +972,7 @@
             "image": "/images/27.png",
             "icone": "🍠🍟",
             "categorie": {
-                "nom": "grill",
+                "nom": "frit",
                 "icone": "🔥"
             },
             "ingredients": [
