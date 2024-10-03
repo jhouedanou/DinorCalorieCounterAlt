@@ -1690,6 +1690,117 @@
                 }
             ],
             "calories_totales": 360
+        },
+        {
+            "nom": "Penne Alfredo",
+            "image": "/images/pasta/penne_alfredo.png",
+            "icone": "🍝",
+            "categorie": {
+                "nom": "pâtes",
+                "icone": "🍝"
+            },
+            "ingredients": [
+                {
+                    "nom": "Penne",
+                    "calories": 220,
+                    "icone": "🍝"
+                },
+                {
+                    "nom": "Crème",
+                    "calories": 200,
+                    "icone": "🥛"
+                },
+                {
+                    "nom": "Fromage Parmesan",
+                    "calories": 150,
+                    "icone": "🧀"
+                },
+                {
+                    "nom": "Beurre",
+                    "calories": 100,
+                    "icone": "🧈"
+                },
+                {
+                    "nom": "Ail",
+                    "calories": 10,
+                    "icone": "🧄"
+                }
+            ],
+            "calories_totales": 680
+        },
+        {
+            "nom": "Lasagne",
+            "image": "/images/pasta/lasagna.png",
+            "icone": "🍝",
+            "categorie": {
+                "nom": "pâtes",
+                "icone": "🍝"
+            },
+            "ingredients": [
+                {
+                    "nom": "Feuilles de lasagne",
+                    "calories": 200,
+                    "icone": "🍝"
+                },
+                {
+                    "nom": "Bœuf haché",
+                    "calories": 250,
+                    "icone": "🥩"
+                },
+                {
+                    "nom": "Fromage mozzarella",
+                    "calories": 200,
+                    "icone": "🧀"
+                },
+                {
+                    "nom": "Sauce tomate",
+                    "calories": 100,
+                    "icone": "🍅"
+                },
+                {
+                    "nom": "Sauce béchamel",
+                    "calories": 150,
+                    "icone": "🥛"
+                }
+            ],
+            "calories_totales": 900
+        },
+        {
+            "nom": "Fettuccine Carbonara",
+            "image": "/images/pasta/fettuccine_carbonara.png",
+            "icone": "🍝",
+            "categorie": {
+                "nom": "pâtes",
+                "icone": "🍝"
+            },
+            "ingredients": [
+                {
+                    "nom": "Fettuccine",
+                    "calories": 220,
+                    "icone": "🍝"
+                },
+                {
+                    "nom": "Jaune d'œuf",
+                    "calories": 60,
+                    "icone": "🥚"
+                },
+                {
+                    "nom": "Pancetta",
+                    "calories": 150,
+                    "icone": "🥓"
+                },
+                {
+                    "nom": "Fromage Parmesan",
+                    "calories": 150,
+                    "icone": "🧀"
+                },
+                {
+                    "nom": "Poivre noir",
+                    "calories": 5,
+                    "icone": "🌶️"
+                }
+            ],
+            "calories_totales": 585
         }
     ]
 }

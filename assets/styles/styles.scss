@@ -467,14 +467,15 @@ border:none !important;
 .zingredients {
   display: flex;
   overflow-x: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch; /* Pour un défilement fluide sur iOS */
-  scrollbar-width: none; /* Pour Firefox */
-  -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
 
-  &::-webkit-scrollbar {
-    display: none; /* Pour Chrome, Safari et Opera */
-  }
+.mouff {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  white-space: normal;
 }
 
 .mouff {
@@ -1206,4 +1207,8 @@ margin:1em auto;
 
 .container{
   max-width: 95vw;
+}
+
+.tabs.is-toggle a{
+  border:none !important;
 }

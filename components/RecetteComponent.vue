@@ -80,7 +80,12 @@
                                 </div>
                             </div>
 
-                            <p>Cliquez sur l'un des ingrédients ci dessous</p>
+                            <!-- <p style="
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 1em 0;
+">Cliquez sur l'un des ingrédients ci dessous afin de compter les calories</p> -->
                             <div class="line-2 columns is-mobile">
                                 <div v-if="aliment.ingredients && aliment.ingredients.length" class="tags container">
 
