@@ -49,7 +49,7 @@
                                     <!-- visuel du plat -->
                                     <nuxt-img class="is-rounded" :src="aliment.image" :alt="aliment.nom" format="webp"
                                         quality="70" :fallback="aliment.image.replace(/\.[^.]+$/, '.jpg')"
-                                        loading="lazy" />
+                                        loading="lazy" width="120" height="auto" />
 
                                 </div>
                                 <div

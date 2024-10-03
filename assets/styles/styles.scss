@@ -469,6 +469,12 @@ border:none !important;
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch; /* Pour un défilement fluide sur iOS */
+  scrollbar-width: none; /* Pour Firefox */
+  -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
+
+  &::-webkit-scrollbar {
+    display: none; /* Pour Chrome, Safari et Opera */
+  }
 }
 
 .mouff {
